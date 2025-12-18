@@ -4,7 +4,7 @@ Software Engineer building fullstack systems with end-to-end type safety and clo
 
 Currently finishing up my CS degree at Case Western Reserve University.
 
-Previously: 3x Amazon SDE Intern (Ads + Fintech teams), Technical Consultant at Deepr (a]()16z).
+Previously: 3x Amazon SDE Intern (Ads + Fintech teams), Technical Consultant at Deepr (a16z).
 
 ## What I'm building
 
