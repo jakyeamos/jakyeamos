@@ -1,29 +1,33 @@
 # Hey, I'm Jakye 👋
 
-Software Engineer building scalable systems with Python, Go, and cloud-native technologies.
+Software Engineer building fullstack systems with end-to-end type safety and cloud-native infrastructure.
 
-Currently finishing up my CS degree at Case Western Reserve University while working as Lead Engineer at Forward Automations, where I ship microservices, AI tools, and the occasional HIPAA-compliant healthcare MVP.
+Currently finishing up my CS degree at Case Western Reserve University.
 
-Previously: Amazon SDE Intern (Ads + Fintech teams), Technical Consultant at Deepr (a]()16z).
+Previously: 3x Amazon SDE Intern (Ads + Fintech teams), Technical Consultant at Deepr (a]()16z).
 
 ## What I'm building
 
-🤖 **AI Interview Coach** — RAG-powered prep tool with real-time feedback *(in progress)*
+🛠️ Pre-Code Review Coverage Tool (in progress) — IDE integration that shows test coverage for your changed lines before you even open the PR. 
+TypeScript · VS Code API · Git diff parsing
 
-📊 **Real-Time Analytics Dashboard** — Drag-and-drop widgets, WebSockets, D3.js *(up next)*
+🔍 RAG Knowledge Search (up next) — Vector search for internal docs with semantic matching and citation tracking.
+Python · FastAPI · Pinecone · OpenAI
 
-🛠️ **Coverage Reporter CLI** — Test coverage awareness during code reviews *(up next)*
+💳 Flea Market Payment Platform (in progress) — Stripe integration for my existing marketplace business. Multi-vendor splits, escrow, the whole deal.
+Next.js · TypeScript · Stripe API · PostgreSQL
+
+🤖 AI Interview Coach (planned) — Practice technical interviews with real-time feedback on your answers.
 
 ## Stack
 
 ```
 Languages:    Python · JavaScript · TypeScript · Go · Java
-Cloud:        AWS (Lambda, S3, EC2, ECS) · Docker · Kubernetes · Terraform
-Frontend:     React · Next.js · D3.js
-Backend:      Node.js · FastAPI · PostgreSQL · Redis
-tic
+Backend:      Node.js · FastAPI · tRPC · Prisma · PostgreSQL · Redis
+Frontend:     React · Next.js · TypeScript · Tailwind CSS · D3.js
+Cloud:        AWS (Lambda, ECS, S3, RDS) · Docker · Kubernetes · Terraform
 ```
 
 ## Let's connect
 
-[Portfolio](https://jakyeamos.dev) · [LinkedIn](https://linkedin.com/in/jakyeamos) · [Email](mailto:jakye.amos@gmail.com)
+[Portfolio](https://jakyeamos.dev) · [LinkedIn](https://linkedin.com/in/jakyeamos) · [Email](mailto:jakyejobs@gmail.com)
