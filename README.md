@@ -30,4 +30,4 @@ Cloud:        AWS (Lambda, ECS, S3, RDS) · Docker · Kubernetes · Terraform
 
 ## Let's connect
 
-[Portfolio](https://jakyeamos.dev) · [LinkedIn](https://linkedin.com/in/jakyeamos) · [Email](mailto:jakyejobs@gmail.com)
+[Portfolio](https://jakye.netlify.app/) · [LinkedIn](https://linkedin.com/in/jakyeamos) · [Email](mailto:jakyejobs@gmail.com)
