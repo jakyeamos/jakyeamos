@@ -8,13 +8,17 @@ Previously: 3x Amazon SDE Intern (Ads + Fintech teams), Technical Consultant at 
 
 ## What I'm building
 
-🛠️ Pre-Code Review Coverage Tool (in progress) — IDE integration that shows test coverage for your changed lines before you even open the PR. 
-TypeScript · VS Code API · Git diff parsing
+🎧 Soundscape (in progress) — A full-stack music rating platform built around typed APIs, real-time aggregation, and scalable analytics.
+Implements album and track rating pipelines, rating distribution visualizations, user preference modeling, and feature-flagged rollouts using a type-safe monorepo architecture.
+Next.js · TypeScript · tRPC · Prisma · PostgreSQL · Redis · Tailwind · Docker
+
+🛠️ Pre-CR Suite (v1 shipped, actively maintained) — A cross-editor code review preparation suite that validates test coverage on changed lines, runs smart pre-review checks, and generates documentation before a PR is opened. Works across VS Code, Neovim, and any LSP-compatible editor via a custom language server. Includes coverage overlays, flaky test detection, review time estimation, and automated PR checklists.
+TypeScript · Language Server Protocol · VS Code API · Git diff parsing · pnpm monorepo
 
 🔍 RAG Knowledge Search (up next) — Vector search for internal docs with semantic matching and citation tracking.
 Python · FastAPI · Pinecone · OpenAI
 
-💳 Flea Market Payment Platform (in progress) — Stripe integration for my existing marketplace business. Multi-vendor splits, escrow, the whole deal.
+💳 Market Payment Platform (in progress) — Stripe integration for my existing marketplace business. Multi-vendor splits, escrow, the whole deal.
 Next.js · TypeScript · Stripe API · PostgreSQL
 
 🤖 AI Interview Coach (planned) — Practice technical interviews with real-time feedback on your answers.
