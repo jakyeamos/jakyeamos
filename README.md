@@ -1,37 +1,61 @@
-# Hey, I'm Jakye 👋
+# Jakye Amos
 
-Software Engineer building fullstack systems with end-to-end type safety and cloud-native infrastructure.
+CS at Case Western. 3x Amazon SDE intern — Ads and Fintech. Previously at Deepr (a16z).
 
-Currently finishing up my CS degree at Case Western Reserve University.
+I build backend-heavy fullstack systems. Typed APIs end-to-end, monorepos that don't fight you, and tooling that shortens the feedback loop between intent and working code.
 
-Previously: 3x Amazon SDE Intern (Ads + Fintech teams), Technical Consultant at Deepr (a16z).
+---
 
-## What I'm building
+## Shipped
 
-🎧 Soundscape (in progress) — A full-stack music rating platform built around typed APIs, real-time aggregation, and scalable analytics.
-Implements album and track rating pipelines, rating distribution visualizations, user preference modeling, and feature-flagged rollouts using a type-safe monorepo architecture.
-Next.js · TypeScript · tRPC · Prisma · PostgreSQL · Redis · Tailwind · Docker
+**[Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite)** — Cross-editor code review prep  
+LSP server that validates coverage on changed lines, detects flaky tests, and runs pre-review checklists before a PR opens. One language server drives three editor clients (VS Code, Neovim, any LSP-compatible editor) — same behavior everywhere.  
+`TypeScript` · `LSP` · `pnpm monorepo` · `Git diff parsing`
 
-🛠️ Pre-CR Suite (v1 shipped, actively maintained) — A cross-editor code review preparation suite that validates test coverage on changed lines, runs smart pre-review checks, and generates documentation before a PR is opened. Works across VS Code, Neovim, and any LSP-compatible editor via a custom language server. Includes coverage overlays, flaky test detection, review time estimation, and automated PR checklists.
-TypeScript · Language Server Protocol · VS Code API · Git diff parsing · pnpm monorepo
+**[AIOS](https://github.com/jakyeamos/AIOS)** — Personal AI operating system  
+Session hook system for Claude Code that auto-ingests observations, extracts patterns across sessions, and promotes high-signal patterns into rules that surface in future prompts. SQLite-backed with a retrieval policy layer for context injection.  
+`Python` · `SQLite` · `Claude Code hooks`
 
-🔍 RAG Knowledge Search (up next) — Vector search for internal docs with semantic matching and citation tracking.
-Python · FastAPI · Pinecone · OpenAI
+**[Court Vision](https://github.com/jakyeamos/Bball)** — Basketball IQ training  
+Web-first platform that teaches users to read the game as a player, coach, and GM. Real-time features via WebSocket with shared TypeScript types across client and server.  
+`React` · `Node.js` · `Socket.io` · `TypeScript`
 
-💳 Market Payment Platform (in progress) — Stripe integration for my existing marketplace business. Multi-vendor splits, escrow, the whole deal.
-Next.js · TypeScript · Stripe API · PostgreSQL
+---
 
-🤖 AI Interview Coach (planned) — Practice technical interviews with real-time feedback on your answers.
+## In Progress
+
+**Soundscape** — Music social platform  
+Typed monorepo for album/track ratings, social feed, discovery, and market features. Feature-flagged rollouts with Redis-backed caching and shared web/mobile platform code.  
+`Next.js` · `tRPC` · `Prisma` · `PostgreSQL` · `Redis`
+
+**Amos Group SaaS** — Government contract intelligence for MBE/MWBE IT firms  
+Multi-tenant platform combining AI bid discovery, compliance-aware prime contractor outreach, and automated bid response drafting. Org-scoped RLS on every table from day one.  
+`Next.js` · `Supabase` · `Stripe` · `Claude API`
+
+**Fantasy** — Dynasty fantasy football intelligence  
+Local-first dynasty league management app.  
+`TypeScript`
+
+**Dsci-proj** — GitHub issue resolution modeling  
+Survival analysis pipeline predicting issue resolution time across 5 major OSS repos (Next.js, Prisma, React, TypeScript, Vercel). Paired with a Next.js triage dashboard.  
+`Python` · `Next.js` · `survival analysis`
+
+---
+
+## Collaborative
+
+- **[RemodelVision](https://github.com/alec-angello/remodelvision)** — AI-powered room renovation cost estimator. Upload a photo, describe the reno, get a visualization and cost estimate. (main contributor)
+
+---
 
 ## Stack
 
 ```
-Languages:    Python · JavaScript · TypeScript · Go · Java
-Backend:      Node.js · FastAPI · tRPC · Prisma · PostgreSQL · Redis
-Frontend:     React · Next.js · TypeScript · Tailwind CSS · D3.js
-Cloud:        AWS (Lambda, ECS, S3, RDS) · Docker · Kubernetes · Terraform
+TypeScript · Python · Go · Java
+Next.js · tRPC · Prisma · FastAPI
+PostgreSQL · Redis · AWS · Docker · Kubernetes · Terraform
 ```
 
-## Let's connect
+---
 
 [Portfolio](https://jakye.netlify.app/) · [LinkedIn](https://linkedin.com/in/jakyeamos) · [Email](mailto:jakyejobs@gmail.com)
