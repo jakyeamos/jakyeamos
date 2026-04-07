@@ -1,6 +1,6 @@
 # Jakye Amos
 
-CS at Case Western. 3x Amazon SDE intern — Ads and Fintech. Previously at Deepr (a16z).
+CS at Case Western. 3x Amazon SDE intern — Ads and Fintech. 
 
 I build backend-heavy fullstack systems. Typed APIs end-to-end, monorepos that don't fight you, and tooling that shortens the feedback loop between intent and working code.
 
