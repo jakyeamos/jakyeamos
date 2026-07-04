@@ -57,8 +57,8 @@ Typed monorepo for ratings, discovery, social feed, provider integrations, web/m
 ## Product Work
 
 **[BBDSE / CourtIQ](https://github.com/jakyeamos/BBDSE)** - basketball intelligence workspace  
-Research and product workspace for player evaluation, roster tools, draft signals, lineup context, coach value, versatility, women's basketball analysis, and the merged CourtIQ/Court Vision draft-room runtime. The old standalone Court Vision/Bballedu repo is preserved as an archive/fallback boundary; normal CourtIQ work now lives in BBDSE.  
-`Python` · `R` · `Next.js` · `data science` · `basketball analytics`
+Research and product workspace for player evaluation, roster tools, draft signals, lineup context, coach value, versatility, women's basketball analysis, and the merged CourtIQ/Court Vision draft-room runtime. It also absorbs the former LaxDS pro lacrosse analytics scaffold for reusable ingestion, data-lake organization, processed tables, and modeling workflows.  
+`Python` · `R` · `Next.js` · `data science` · `sports analytics`
 
 ---
 
