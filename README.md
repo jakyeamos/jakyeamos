@@ -60,13 +60,9 @@ Typed monorepo for ratings, discovery, social feed, provider integrations, web/m
 Coach-focused recruiting demo with athlete search, fit scoring, ranked result cards, and prospect profiles built around the highest-value evaluation workflow.  
 `Next.js` · `TypeScript` · `sports analytics`
 
-**[BBDSE](https://github.com/jakyeamos/BBDSE)** - basketball data-science workspace  
-Research and product workspace for player evaluation, roster tools, draft signals, lineup context, coach value, versatility, and women's basketball analysis.  
-`Python` · `R` · `data science` · `basketball analytics`
-
-**[Court Vision](https://github.com/jakyeamos/Bball)** - basketball IQ training  
-Web platform for learning how to read the game as a player, coach, and GM, with real-time features and shared TypeScript contracts across client and server.  
-`React` · `Node.js` · `Socket.io` · `TypeScript`
+**[BBDSE / CourtIQ](https://github.com/jakyeamos/BBDSE)** - basketball intelligence workspace  
+Research and product workspace for player evaluation, roster tools, draft signals, lineup context, coach value, versatility, women's basketball analysis, and the merged CourtIQ/Court Vision draft-room runtime. The old standalone Court Vision/Bballedu repo is preserved as an archive/fallback boundary; normal CourtIQ work now lives in BBDSE.  
+`Python` · `R` · `Next.js` · `data science` · `basketball analytics`
 
 ---
 
