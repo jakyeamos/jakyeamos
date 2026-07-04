@@ -28,9 +28,9 @@ Typed contracts for evaluating AI-agent runs with consistent cases, rubrics, evi
 Research-grounded writing pipeline that turns source material into claim-safe drafts for domain-heavy writing tasks.  
 `Python` · `CLI` · `research workflows` · `writing systems`
 
-**[TMCP](https://github.com/jakyeamos/tmcp)** - MCP/plugin distribution v0.3.2  
-Composable skill-packet workflows for expert audits, readiness reviews, routing policies, and agent handoffs.  
-`Python` · `MCP` · `plugins` · `agent workflows`
+**[TMCP](https://github.com/jakyeamos/tmcp)** - Claude + Codex marketplace-tested MCP/plugin distribution v0.3.2  
+Composable skill-packet workflows for expert audits, readiness reviews, routing policies, and agent handoffs. Claude marketplace install, Codex marketplace add/upgrade, launcher smokes, MCP Registry draft validation, and public tarball SHA-256 smoke all passed.  
+`Python` · `MCP` · `Claude` · `Codex` · `agent workflows`
 
 **[Terrace](https://github.com/jakyeamos/Terrace)** - npm package `@jakyeamos33/terrace`  
 Spec-driven workflow CLI for AI-assisted development. The public package is live; the 0.2.0 line is staged in-repo for the next distribution pass.  
