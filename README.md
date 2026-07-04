@@ -76,9 +76,9 @@ Institutional knowledge-capture platform for retiring government employees, focu
 Private client product work around typed full-stack application workflows, product surfaces, and operational tooling.  
 `TypeScript` · `healthcare` · `full-stack` · `product engineering`
 
-**CrimClock** - civic/legal workflow product  
-Private client product work for a TypeScript application in the civic/legal tooling space.  
-`TypeScript` · `workflow tools` · `client product` · `full-stack`
+**CrimClock** - legal time intelligence platform  
+Private client product for neutral criminal procedural timing, sentencing, parole eligibility, custody-impact calculations, deadline alerts, and explainable legal-time audit trails across professional, court, and family-facing modes.  
+`Next.js` · `FastAPI` · `PostgreSQL` · `legal tech` · `rules engines`
 
 ---
 
