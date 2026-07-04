@@ -66,6 +66,22 @@ Research and product workspace for player evaluation, roster tools, draft signal
 
 ---
 
+## Private / Client Product Work
+
+**Tenure Systems** - B2B GovTech SaaS  
+Institutional knowledge-capture platform for retiring government employees, focused on preserving operational context before it leaves an organization.  
+`TypeScript` · `SaaS` · `GovTech` · `knowledge systems`
+
+**EliHealth** - healthcare product build  
+Private client product work around typed full-stack application workflows, product surfaces, and operational tooling.  
+`TypeScript` · `healthcare` · `full-stack` · `product engineering`
+
+**CrimClock** - civic/legal workflow product  
+Private client product work for a TypeScript application in the civic/legal tooling space.  
+`TypeScript` · `workflow tools` · `client product` · `full-stack`
+
+---
+
 ## Earlier / Collaborative
 
 **[RemodelVision](https://github.com/alec-angello/remodelvision)** - AI renovation estimator  
