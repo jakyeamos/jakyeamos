@@ -56,10 +56,6 @@ Typed monorepo for ratings, discovery, social feed, provider integrations, web/m
 
 ## Product Work
 
-**[Hoopscout](https://github.com/jakyeamos/Hoopscout)** - basketball recruiting intelligence  
-Coach-focused recruiting demo with athlete search, fit scoring, ranked result cards, and prospect profiles built around the highest-value evaluation workflow.  
-`Next.js` · `TypeScript` · `sports analytics`
-
 **[BBDSE / CourtIQ](https://github.com/jakyeamos/BBDSE)** - basketball intelligence workspace  
 Research and product workspace for player evaluation, roster tools, draft signals, lineup context, coach value, versatility, women's basketball analysis, and the merged CourtIQ/Court Vision draft-room runtime. The old standalone Court Vision/Bballedu repo is preserved as an archive/fallback boundary; normal CourtIQ work now lives in BBDSE.  
 `Python` · `R` · `Next.js` · `data science` · `basketball analytics`
@@ -75,6 +71,10 @@ Institutional knowledge-capture platform for retiring government employees, focu
 **EliHealth** - healthcare product build  
 Private client product work around typed full-stack application workflows, product surfaces, and operational tooling.  
 `TypeScript` · `healthcare` · `full-stack` · `product engineering`
+
+**Hoopscout** - basketball recruiting intelligence  
+Private client product with athlete search, fit scoring, ranked result cards, and prospect profiles built around coach-facing evaluation workflows.  
+`Next.js` · `TypeScript` · `sports analytics` · `recruiting`
 
 **CrimClock** - legal time intelligence platform  
 Private client product for neutral criminal procedural timing, sentencing, parole eligibility, custody-impact calculations, deadline alerts, and explainable legal-time audit trails across professional, court, and family-facing modes.  
