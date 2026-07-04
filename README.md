@@ -2,36 +2,55 @@
 
 CS at Case Western. 3x Amazon SDE intern across Ads and Fintech.
 
-I build backend-heavy product systems, developer tools, and local-first AI workflows. The current theme: make AI-assisted engineering less loose by tying agent work to specs, tests, repo state, proof artifacts, and repeatable quality gates.
+I build developer tools, backend-heavy product systems, and local-first AI workflows. Recent work is now public: PyPI, npm, and MCP/plugin releases for repo quality gates, pre-review checks, lint rules, agent-eval contracts, and research workflows.
 
 ---
 
-## Current Focus
+## Public Releases
 
-- Agent workflow infrastructure: durable memory, routed work packets, quality gates, and governed handoffs.
-- Developer tools that run before review: changed-line coverage, headless checks, security gates, and editor-integrated feedback.
-- Sports and recruiting intelligence products: basketball evaluation, roster analysis, prospect search, and decision support.
-- Local-first career/proof tooling: turning real project evidence into claim-safe public writing and targeted outreach.
+**[Quality Runner](https://github.com/jakyeamos/quality-runner)** - PyPI package `quality-runner` v0.3.1  
+Repo-quality CLI and MCP server for running proof-oriented checks across a codebase and emitting machine-readable evidence.  
+`Python` · `CLI` · `MCP` · `quality gates`
 
----
+**[ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop)** - npm package `eslint-plugin-anti-slop` v0.2.0  
+ESLint plugin for catching low-signal AI/code-review patterns before they land in production code.  
+`TypeScript` · `ESLint` · `static analysis` · `developer experience`
 
-## Building
+**[Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite)** - npm packages `@pre-cr/core` and `@pre-cr/server` v0.1.0  
+Coverage-first pre-PR readiness tooling that validates changed-line coverage and exposes reusable review checks through stable package surfaces.  
+`TypeScript` · `LSP` · `coverage` · `pre-review tooling`
 
-**[Terrace](https://github.com/jakyeamos/Terrace)** - spec-driven workflow CLI for AI-assisted development  
-Strict-core project governance for PRDs, specs, test plans, protected baselines, phase execution, migration from older planning systems, and release-readiness checks. It installs non-overwriting Codex and Claude Code assets so agents can operate against the same repo rules.  
+**[Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract)** - PyPI package `agent-eval-contract` v0.2.0  
+Typed contracts for evaluating AI-agent runs with consistent cases, rubrics, evidence, and result payloads.  
+`Python` · `Pydantic` · `agent evaluation` · `quality evidence`
+
+**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.1.0  
+Research-grounded writing pipeline that turns source material into claim-safe drafts for domain-heavy writing tasks.  
+`Python` · `CLI` · `research workflows` · `writing systems`
+
+**[TMCP](https://github.com/jakyeamos/tmcp)** - MCP/plugin distribution v0.3.2  
+Composable skill-packet workflows for expert audits, readiness reviews, routing policies, and agent handoffs.  
+`Python` · `MCP` · `plugins` · `agent workflows`
+
+**[Terrace](https://github.com/jakyeamos/Terrace)** - npm package `@jakyeamos33/terrace`  
+Spec-driven workflow CLI for AI-assisted development. The public package is live; the 0.2.0 line is staged in-repo for the next distribution pass.  
 `TypeScript` · `CLI tooling` · `agent workflows` · `quality gates`
 
-**[AIOS](https://github.com/jakyeamos/AIOS)** - local operating system for agent work  
-Local SQLite-backed system for work context, durable project memory, session hooks, workflow synthesis, routed agent runs, quality-pipeline visibility, and a Next.js command-center dashboard.  
-`Python` · `SQLite` · `Next.js` · `local-first systems`
+---
 
-**[Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite)** - coverage-first pre-PR readiness  
-LSP and headless CLI that run changed-line coverage checks before a PR opens. The same repo-configured gate powers VS Code, Neovim, generic LSP clients, and automation via stable JSON output.  
-`TypeScript` · `LSP` · `VS Code` · `Neovim` · `coverage`
+## Active Systems
+
+**[AIOS](https://github.com/jakyeamos/AIOS)** - local operating system for agent work  
+SQLite-backed system for work context, durable project memory, session hooks, workflow synthesis, routed agent runs, quality-pipeline visibility, and a Next.js command-center dashboard.  
+`Python` · `SQLite` · `Next.js` · `local-first systems`
 
 **[Jakye Hirability Console](https://github.com/jakyeamos/BIP-Console)** - local career command center  
 CLI and local dashboard for ingesting project packets, generating claim-labeled drafts, blocking unsupported claims, approving/scheduling content, and organizing companies, roles, contacts, outreach, and applications.  
 `TypeScript` · `Electron` · `local data` · `safety gates`
+
+**[Soundscape](https://github.com/jakyeamos/soundscape-app)** - social music platform  
+Typed monorepo for ratings, discovery, social feed, provider integrations, web/mobile shared code, and feature-flagged rollout work.  
+`Next.js` · `tRPC` · `Prisma` · `PostgreSQL` · `Redis`
 
 ---
 
@@ -44,10 +63,6 @@ Coach-focused recruiting demo with athlete search, fit scoring, ranked result ca
 **[BBDSE](https://github.com/jakyeamos/BBDSE)** - basketball data-science workspace  
 Research and product workspace for player evaluation, roster tools, draft signals, lineup context, coach value, versatility, and women's basketball analysis.  
 `Python` · `R` · `data science` · `basketball analytics`
-
-**[Soundscape](https://github.com/jakyeamos/soundscape-app)** - social music platform  
-Typed monorepo for ratings, discovery, social feed, provider integrations, web/mobile shared code, and feature-flagged rollout work.  
-`Next.js` · `tRPC` · `Prisma` · `PostgreSQL` · `Redis`
 
 **[Court Vision](https://github.com/jakyeamos/Bball)** - basketball IQ training  
 Web platform for learning how to read the game as a player, coach, and GM, with real-time features and shared TypeScript contracts across client and server.  
