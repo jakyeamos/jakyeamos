@@ -8,11 +8,11 @@ I build developer tools, backend-heavy product systems, and local-first AI workf
 
 ## Public Releases
 
-**[Quality Runner](https://github.com/jakyeamos/quality-runner)** - PyPI package `quality-runner` v0.3.1  
+**[Quality Runner](https://github.com/jakyeamos/quality-runner)** - PyPI package `quality-runner` v0.5.0  
 Repo-quality CLI and MCP server for running proof-oriented checks across a codebase and emitting machine-readable evidence.  
 `Python` · `CLI` · `MCP` · `quality gates`
 
-**[ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop)** - npm package `eslint-plugin-anti-slop` v0.2.0  
+**[ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop)** - npm package `eslint-plugin-anti-slop` v0.3.0  
 ESLint plugin for catching low-signal AI/code-review patterns before they land in production code.  
 `TypeScript` · `ESLint` · `static analysis` · `developer experience`
 
@@ -20,15 +20,15 @@ ESLint plugin for catching low-signal AI/code-review patterns before they land i
 Coverage-first pre-PR readiness tooling that validates changed-line coverage and exposes reusable review checks through stable package surfaces.  
 `TypeScript` · `LSP` · `coverage` · `pre-review tooling`
 
-**[Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract)** - PyPI package `agent-eval-contract` v0.2.0  
+**[Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract)** - PyPI package `agent-eval-contract` v0.3.0  
 Typed contracts for evaluating AI-agent runs with consistent cases, rubrics, evidence, and result payloads.  
 `Python` · `Pydantic` · `agent evaluation` · `quality evidence`
 
-**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.1.0  
+**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.2.0  
 Research-grounded writing pipeline that turns source material into claim-safe drafts for domain-heavy writing tasks.  
 `Python` · `CLI` · `research workflows` · `writing systems`
 
-**[TMCP](https://github.com/jakyeamos/tmcp)** - Claude + Codex marketplace-distributed MCP/plugin package v0.3.3  
+**[TMCP](https://github.com/jakyeamos/tmcp)** - Claude + Codex marketplace-distributed MCP/plugin package v0.4.0  
 Composable skill-packet workflows for expert audits, readiness reviews, routing policies, and agent handoffs. Verified across GitHub Release assets, Codex marketplace install/smokes, Claude Code marketplace install/smokes, and MCP Registry publication.  
 `Python` · `MCP` · `Claude` · `Codex` · `agent workflows`
 
@@ -41,7 +41,7 @@ Spec-driven workflow CLI for AI-assisted development. The public package is live
 ## Active Systems
 
 **[AIOS](https://github.com/jakyeamos/AIOS)** - local operating system for agent work  
-SQLite-backed system for work context, durable project memory, session hooks, workflow synthesis, routed agent runs, quality-pipeline visibility, and a Next.js command-center dashboard.  
+SQLite-backed system for work context, durable project memory, business-memory ingestion and retrieval, session hooks, workflow synthesis, routed agent runs, quality-pipeline visibility, and a Next.js command-center dashboard.  
 `Python` · `SQLite` · `Next.js` · `local-first systems`
 
 **[Jakye Hirability Console](https://github.com/jakyeamos/BIP-Console)** - local career command center  
@@ -49,7 +49,7 @@ CLI and local dashboard for ingesting project packets, generating claim-labeled 
 `TypeScript` · `Electron` · `local data` · `safety gates`
 
 **[Soundscape](https://github.com/jakyeamos/soundscape-app)** - social music platform  
-Typed monorepo for ratings, discovery, social feed, provider integrations, web/mobile shared code, and feature-flagged rollout work.  
+Typed monorepo for ratings, discovery, social feed, community concerts and blogs, mobile listening flows, shareable ranking cards, provider integrations, and web/mobile shared code.  
 `Next.js` · `tRPC` · `Prisma` · `PostgreSQL` · `Redis`
 
 ---

@@ -5,7 +5,7 @@
 See: `.planning/PROJECT.md` (updated 2026-07-04)
 
 **Core value:** Keep jakyeamos-profile healthy by resolving Quality Runner findings with behavior-preserving, evidence-backed remediation.
-**Current focus:** QR remediation planning
+**Current focus:** Keep the public profile README aligned with shipped releases
 
 ## Milestone
 
@@ -23,6 +23,7 @@ See: `.planning/PROJECT.md` (updated 2026-07-04)
 ## Completed Scope
 
 - GSD project bootstrap initialized from QR documentation.
+- Updated the public release inventory for Quality Runner 0.5.0, Anti-Slop 0.3.0, RDW 0.2.0, Agent Eval Contract 0.3.0, and TMCP 0.4.0.
 
 ## Workflow Notes
 
