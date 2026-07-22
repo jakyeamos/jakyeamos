@@ -8,33 +8,46 @@ I build developer tools, backend-heavy product systems, and local-first AI workf
 
 ## Public Releases
 
-**[Quality Runner](https://github.com/jakyeamos/quality-runner)** - PyPI package `quality-runner` v0.5.0  
+**[Quality Runner](https://github.com/jakyeamos/quality-runner/tree/v0.6.0)** - PyPI package `quality-runner` v0.6.0<br>
 Repo-quality CLI and MCP server for running proof-oriented checks across a codebase and emitting machine-readable evidence.  
 `Python` · `CLI` · `MCP` · `quality gates`
 
-**[ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop)** - npm package `eslint-plugin-anti-slop` v0.3.0  
+**[ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0)** - npm package `eslint-plugin-anti-slop` v0.5.0<br>
 ESLint plugin for catching low-signal AI/code-review patterns before they land in production code.  
 `TypeScript` · `ESLint` · `static analysis` · `developer experience`
 
-**[Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite)** - npm packages `@pre-cr/core` and `@pre-cr/server` v0.1.0  
+**[Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0)** - npm packages `@pre-cr/core` and `@pre-cr/server` v0.1.0<br>
 Coverage-first pre-PR readiness tooling that validates changed-line coverage and exposes reusable review checks through stable package surfaces.  
 `TypeScript` · `LSP` · `coverage` · `pre-review tooling`
 
-**[Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract)** - PyPI package `agent-eval-contract` v0.3.0  
+**[Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract)** - PyPI package `agent-eval-contract` v0.2.0; validated v0.3.0 candidate staged on `dev` ([tag](https://github.com/jakyeamos/agent-eval-contract/tree/v0.3.0))<br>
 Typed contracts for evaluating AI-agent runs with consistent cases, rubrics, evidence, and result payloads.  
 `Python` · `Pydantic` · `agent evaluation` · `quality evidence`
 
-**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.2.0  
+**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.1.0; validated v0.2.0 candidate staged on `dev` ([tag](https://github.com/jakyeamos/research-domain-writing/tree/v0.2.0))<br>
 Research-grounded writing pipeline that turns source material into claim-safe drafts for domain-heavy writing tasks.  
 `Python` · `CLI` · `research workflows` · `writing systems`
 
-**[TMCP](https://github.com/jakyeamos/tmcp)** - Claude + Codex marketplace-distributed MCP/plugin package v0.4.0  
+**[TMCP](https://github.com/jakyeamos/tmcp/releases/tag/v0.5.7)** - Claude + Codex marketplace-distributed MCP/plugin package v0.5.7<br>
 Composable skill-packet workflows for expert audits, readiness reviews, routing policies, and agent handoffs. Verified across GitHub Release assets, Codex marketplace install/smokes, Claude Code marketplace install/smokes, and MCP Registry publication.  
 `Python` · `MCP` · `Claude` · `Codex` · `agent workflows`
 
-**[Terrace](https://github.com/jakyeamos/Terrace)** - npm package `@jakyeamos33/terrace`  
-Spec-driven workflow CLI for AI-assisted development. The public package is live; the 0.2.0 line is staged in-repo for the next distribution pass.  
+**[Terrace](https://github.com/jakyeamos/Terrace)** - npm package `@jakyeamos33/terrace` v0.1.1<br>
+Spec-driven workflow CLI for AI-assisted development. The public package remains v0.1.1; the 0.2.0 line is staged in-repo for the next distribution pass.<br>
 `TypeScript` · `CLI tooling` · `agent workflows` · `quality gates`
+
+---
+
+## Staged Local Systems
+
+These split runtimes have verified local repositories and bounded first-slice status. They are access-controlled or private GitHub remotes, have no package release yet, and are not presented as shipped public products:
+
+- **Agent Eval Runtime** — report-only local evaluation, comparison, and benchmark-evidence runtime.
+- **AI Context Runtime** — report-only context compilation, handoff, and session-intelligence runtime.
+- **AI Workflow Leverage** — evidence-bounded cross-repository workflow measurement with review-gated execution.
+- **macctl** — owner-only macOS control plane with explicit accessibility and capture boundaries.
+- **Marketing Autoresearch** — shadow/report-only SEO/AEO research loop with fail-closed publication controls.
+- **Relay** — private native macOS workbench; screenshot and accessibility dogfood remains capture-limited.
 
 ---
 
