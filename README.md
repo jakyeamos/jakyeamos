@@ -24,7 +24,7 @@ Coverage-first pre-PR readiness tooling that validates changed-line coverage and
 Typed contracts for evaluating AI-agent runs with consistent cases, rubrics, evidence, and result payloads.  
 `Python` · `Pydantic` · `agent evaluation` · `quality evidence`
 
-**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.1.0; validated v0.2.0 candidate staged on `dev` ([tag](https://github.com/jakyeamos/research-domain-writing/tree/v0.2.0))<br>
+**[Research Domain Writing](https://github.com/jakyeamos/research-domain-writing)** - PyPI package `research-domain-writing` v0.1.0; validated v0.3.0 candidate staged on `dev` ([dev](https://github.com/jakyeamos/research-domain-writing/tree/dev))<br>
 Research-grounded writing pipeline that turns source material into claim-safe drafts for domain-heavy writing tasks.  
 `Python` · `CLI` · `research workflows` · `writing systems`
 
