@@ -2,7 +2,7 @@
 
 CS at Case Western. 3x Amazon SDE intern across Ads and Fintech.
 
-I build developer tools, backend-heavy product systems, and local-first AI workflows. Recent work is now public: PyPI, npm, and MCP/plugin releases for repo quality gates, pre-review checks, lint rules, agent-eval contracts, and research workflows.
+I build developer tools, backend-heavy product systems, and local-first AI workflows. Recent public work spans PyPI, npm, and MCP/plugin releases, Pronto's local-first portfolio command center, and a portable agentic workbench for context, routing, evaluation, and durable handoffs.
 
 ---
 
@@ -38,9 +38,25 @@ Spec-driven workflow CLI for AI-assisted development. The public package remains
 
 ---
 
+## Public Systems
+
+**[Pronto](https://github.com/jakyeamos/pronto)** - local-first portfolio command center<br>
+Public v1 desktop surface for Git repository and worktree discovery, structured quality and CI-readiness evidence, provider-neutral GitHub snapshots, and read-only remediation/release-preparation previews. It does not perform repository mutations or publish actions.<br>
+`Tauri` · `React` · `Rust` · `SQLite` · `local-first systems`
+
+**[Portable Agentic Workbench](https://github.com/jakyeamos/jakyeamos-agentic-setup)** - vendor-neutral agent workflow catalog<br>
+Portable context-management, workflow-routing, safety, evaluation, and durable-handoff contracts with manifest-aware setup and explicit dry-run/apply boundaries.<br>
+`Python` · `Node.js` · `agent workflows` · `safety contracts`
+
+**[Context Compiler Contract](https://github.com/jakyeamos/context-compiler-contract)** - portable validator contracts<br>
+Public ESM validators for context-compiler results and routing manifests. Runtime source selection, ranking, receipt writing, and compilation remain owned by AIOS.<br>
+`TypeScript` · `ESM` · `contracts` · `AI tooling`
+
+---
+
 ## Staged Local Systems
 
-These split runtimes have verified local repositories and bounded first-slice status. They are access-controlled or private GitHub remotes, have no package release yet, and are not presented as shipped public products:
+These split runtimes have verified repositories and bounded first-slice status. They are not presented as shipped package products; their source and runtime evidence boundaries vary by project:
 
 - **Agent Eval Runtime** — report-only local evaluation, comparison, and benchmark-evidence runtime.
 - **AI Context Runtime** — report-only context compilation, handoff, and session-intelligence runtime.
