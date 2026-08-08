@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "project": {
+    "name": "jakyeamos-profile",
+    "identity": "A personal profile and provenance surface for representing the owner's public-facing identity and supporting context.",
+    "audience": "The owner and readers who need an attributable, reviewable profile representation.",
+    "core_loop": "Update evidence, render the profile surface, read it back, and review claims before relying on the result.",
+    "north_star": "Personal profile claims remain attributable, current enough for their use, and distinguish source evidence from interpretation.",
+    "not_this": [
+      "An autonomous public identity publisher",
+      "A substitute for human review of personal claims",
+      "Proof of a current released profile without a live readback"
+    ]
+  },
+  "targets": {
+    "mvp": {
+      "definition": "The repository provides an inspectable profile representation with a documented provenance boundary."
+    },
+    "complete_product": {
+      "definition": "Profile updates can be reviewed, rendered, and read back with source provenance and human control preserved."
+    }
+  },
+  "pillars": [
+    {
+      "id": "profile-provenance",
+      "name": "Profile provenance",
+      "outcomes": [
+        {
+          "id": "attributable-profile",
+          "name": "A reader can distinguish profile evidence, intended representation, and interpretation.",
+          "targets": ["mvp", "complete_product"],
+          "maturity": 25,
+          "confidence": "low",
+          "layers": {
+            "intended": "The repository is intended to hold a reviewable personal profile surface.",
+            "planned": "README.md and the profile configuration establish the representation boundary.",
+            "implemented": "The repository contains profile guidance and an MCP configuration surface.",
+            "verified": "A fresh rendered profile readback is not recorded in this bootstrap contract."
+          },
+          "evidence": [
+            {"ref": "README.md", "note": "Profile purpose and usage boundary.", "observed_at": "2026-08-08T22:01:35Z"},
+            {"ref": ".mcp.json", "note": "Configured profile-related integration surface.", "observed_at": "2026-08-08T22:01:35Z"}
+          ],
+          "blockers": [
+            {"kind": "verification", "summary": "Current render, readback, and public-surface review evidence are not attached."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "human-review",
+      "name": "Human review",
+      "outcomes": [
+        {
+          "id": "review-before-reliance",
+          "name": "Profile changes remain subject to deliberate owner review before external reliance.",
+          "targets": ["complete_product"],
+          "maturity": 25,
+          "confidence": "low",
+          "layers": {
+            "intended": "The profile surface should preserve human control over personal representation.",
+            "planned": "Repository documentation treats the profile as an inspectable local surface.",
+            "implemented": "The repository does not demonstrate autonomous publication behavior.",
+            "verified": "No current owner-reviewed release or external readback is recorded."
+          },
+          "evidence": [
+            {"ref": "README.md", "note": "Local profile boundary.", "observed_at": "2026-08-08T22:01:35Z"}
+          ],
+          "blockers": [
+            {"kind": "verification", "summary": "A live reviewed handoff remains a human-controlled follow-up, not a documentation claim."}
+          ]
+        }
+      ]
+    }
+  ],
+  "source_layers": {
+    "intended": [
+      {"ref": "README.md", "note": "Declared profile purpose.", "observed_at": "2026-08-08T22:01:35Z"}
+    ],
+    "planned": [],
+    "implemented": [
+      {"ref": ".mcp.json", "note": "Configured local integration surface.", "observed_at": "2026-08-08T22:01:35Z"}
+    ],
+    "verified": []
+  },
+  "drift": [
+    {
+      "kind": "verification-gap",
+      "summary": "The profile representation is inspectable locally, but current rendered behavior and external readback are unverified.",
+      "status": "open",
+      "observed_at": "2026-08-08T22:01:35Z",
+      "evidence": [
+        {"ref": "README.md", "note": "Local documentation does not establish a live profile release.", "observed_at": "2026-08-08T22:01:35Z"}
+      ]
+    }
+  ],
+  "updated_at": "2026-08-08T22:01:35Z"
+}
