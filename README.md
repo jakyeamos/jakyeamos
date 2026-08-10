@@ -133,3 +133,9 @@ pnpm monorepos · LSPs · CLIs · local-first tooling
 ---
 
 [Portfolio](https://jakye.netlify.app/) · [LinkedIn](https://linkedin.com/in/jakyeamos) · [Email](mailto:jakyejobs@gmail.com)
+
+## Repository quality
+
+Run `python3 -m unittest discover -s tests -v` to validate the profile's
+required sections and local Markdown links. The same command is the
+repository-owned Pre-CR gate in `.pre-cr.json`.
