@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "testCommand": "python3 -m unittest discover -s tests -v",
+  "checks": {
+    "coverage": false,
+    "security": true,
+    "checklist": true
+  }
+}
