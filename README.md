@@ -8,37 +8,67 @@ I build developer tools, backend-heavy product systems, and local-first AI workf
 
 ---
 
+<!-- profile-catalog: schema=jakyeamos-profile-catalog/v1 catalog_sha256=d57069781f884824c2350937bb5a8713d3629fc86d87175332652f9ec156c3cc source_commit=bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63 inventory_observed_at=2026-08-20T18:01:00Z rendered_entry_count=10 -->
+
 ## Public Releases
 
 | Project | Release | Focus |
 | --- | --- | --- |
-| [Quality Runner](https://github.com/jakyeamos/quality-runner/tree/v0.6.0) | PyPI `v0.6.0` | Proof-oriented repository quality checks and machine-readable evidence |
-| [ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0) | npm `v0.5.0` | Static analysis for low-signal AI and review patterns |
-| [Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0) | npm `@pre-cr/* v0.1.0` | Changed-line coverage and pre-review readiness tooling |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/agent-eval-contract -->
 | [Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract) | PyPI `v0.2.0`; repo tag `v0.3.0` | Typed cases, rubrics, evidence, and result contracts for agent evaluation |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/eslint-plugin-anti-slop -->
+| [ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0) | npm `v0.5.0` | Static analysis for low-signal AI and review patterns |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/pre-cr-suite-lsp -->
+| [Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0) | npm `@pre-cr/* v0.1.0` | Changed-line coverage and pre-review readiness tooling |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/quality-runner -->
+| [Quality Runner](https://github.com/jakyeamos/quality-runner/tree/v0.6.0) | PyPI `v0.6.0` | Proof-oriented repository quality checks and machine-readable evidence |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/research-domain-writing -->
 | [Research Domain Writing](https://github.com/jakyeamos/research-domain-writing) | PyPI `v0.1.0`; repo tag `v0.2.2` | Source-grounded writing workflows with claim discipline |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/tmcp -->
 | [TMCP](https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8) | GitHub release `v0.5.8` | MCP/plugin workflows for audits, readiness, routing, and handoffs |
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/Terrace -->
 | [Terrace](https://github.com/jakyeamos/Terrace) | npm `v0.1.1` | Spec-driven workflow CLI for AI-assisted development |
 
 ## Public Systems
 
-| System | Focus |
-| --- | --- |
-| [Pronto](https://github.com/jakyeamos/pronto) | Local-first repository, worktree, quality-evidence, and release-preparation command center |
-| [Portable Agentic Workbench](https://github.com/jakyeamos/jakyeamos-agentic-setup) | Vendor-neutral context, routing, safety, evaluation, and durable-handoff contracts |
-| [Context Compiler Contract](https://github.com/jakyeamos/context-compiler-contract) | Portable ESM validators for compiled-context results and routing manifests |
+<details>
+<summary>Public Systems</summary>
+
+<details>
+<summary>Core Systems</summary>
+
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/context-compiler-contract -->
+- [Context Compiler Contract](https://github.com/jakyeamos/context-compiler-contract) — Portable ESM validators for compiled-context results and routing manifests
+
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/projects/jakyeamos-agent-skills -->
+- [Portable Agentic Workbench](https://github.com/jakyeamos/jakyeamos-agentic-setup) — Vendor-neutral context, routing, safety, evaluation, and durable-handoff contracts
+
+<!-- profile-catalog-entry: repository:/Users/jakyeamos/Documents/pronto -->
+- [Pronto](https://github.com/jakyeamos/pronto) — Local-first repository, worktree, quality-evidence, and release-preparation command center
+
+</details>
+
+</details>
 
 ## Active Systems
 
+<details>
+<summary>Current focus</summary>
+
 Current work spans agent infrastructure, career operations, product engineering, music, sports analytics, and applied AI.
+
+</details>
 
 ## Product Work
 
-I build product systems from evidence-heavy internal tools to public-facing applications.
-
 ## Writing
 
+<details>
+<summary>Writing</summary>
+
 I write about implementation, evidence, and AI systems at [FRMWRK Labs](https://www.frmwrklabs.com/).
+
+</details>
 
 ## Stack
 
