@@ -1,0 +1,68 @@
+{
+  "schema_version": "change-surface-matrix/v1",
+  "subject": {
+    "kind": "repository",
+    "id": "jakyeamos-profile"
+  },
+  "owner": "Jakye Amos",
+  "last_reviewed": "2026-08-20",
+  "surfaces": [
+    {
+      "id": "profile-catalog-contract",
+      "scope": "local catalog and onboarding inventory",
+      "path": "profile-catalog.json; scripts/profile_catalog.py; scripts/refresh_profile_catalog.py",
+      "owner": "Jakye Amos",
+      "condition": "A repository is added, removed, reclassified, or its catalog freshness, source commit, or visibility policy changes.",
+      "operations": ["add", "change", "remove"],
+      "validation": [
+        "Refresh from Pronto's read-only registered-repository inventory and verify one row per registered repository.",
+        "Validate schema, duplicate identities, freshness states, visibility policies, current-row requirements, and private URL boundaries.",
+        "Keep missing, needs_review, stale, blocked, and unknown evidence distinct from fully_private; do not infer privacy from absence of provider evidence."
+      ],
+      "status": "applicable"
+    },
+    {
+      "id": "profile-readme-renderer",
+      "scope": "public profile README",
+      "path": "README.md; scripts/generate_profile_readme.py; scripts/check_profile.py",
+      "owner": "Jakye Amos",
+      "condition": "The profile README or the catalog's README-eligibility policy changes.",
+      "operations": ["add", "change", "remove"],
+      "validation": [
+        "Verify the catalog hash, source commit, inventory observation time, and rendered-entry count marker agree.",
+        "Verify every current public or explicitly approved private_readme_allowed row is rendered exactly once.",
+        "Verify fully_private, missing, stale, and needs_review rows are excluded; private README-allowed rows never emit a private URL automatically.",
+        "Verify Public Releases remains a flat table and other catalog sections support category and subcategory disclosure, including Product Work > Developer Tooling > Agent-enabled."
+      ],
+      "status": "applicable"
+    },
+    {
+      "id": "profile-agent-context",
+      "scope": "agent-facing profile workflow",
+      "path": ".agents/change-surface-matrix.json; README.md; scripts/",
+      "owner": "Jakye Amos",
+      "condition": "Catalog refresh, README generation, or profile publication workflow changes.",
+      "operations": ["add", "change", "remove"],
+      "validation": [
+        "Document the source inventory, read-only refresh boundary, freshness window, and exact command used to render the README.",
+        "Keep source/local inventory, provider visibility, README eligibility, and published profile readback as separate evidence lanes."
+      ],
+      "status": "applicable"
+    },
+    {
+      "id": "profile-tests",
+      "scope": "repository checks",
+      "path": "tests/test_check_profile.py; scripts/check_profile.py",
+      "owner": "Jakye Amos",
+      "condition": "Any profile catalog or renderer behavior changes.",
+      "operations": ["add", "change", "remove"],
+      "validation": [
+        "python3 -m unittest discover -s tests -v",
+        "python3 scripts/check_profile.py",
+        "python3 scripts/generate_profile_readme.py --check"
+      ],
+      "status": "applicable"
+    }
+  ],
+  "reviewed_no_impact": []
+}

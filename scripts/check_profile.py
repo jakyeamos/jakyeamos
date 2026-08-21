@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the repository-owned profile README contract."""
+"""Validate the repository-owned profile README and catalog contract."""
 
 from __future__ import annotations
 
@@ -7,14 +7,12 @@ import json
 import re
 from pathlib import Path
 
-REQUIRED_HEADINGS = (
-    "# Jakye Amos",
-    "## Public Releases",
-    "## Public Systems",
-    "## Active Systems",
-    "## Product Work",
-    "## Stack",
-)
+try:
+    from scripts.profile_catalog import validate_readme
+except ModuleNotFoundError:  # pragma: no cover - direct script execution
+    from profile_catalog import validate_readme
+
+REQUIRED_HEADINGS = ("# Jakye Amos", "## Public Releases", "## Public Systems", "## Active Systems", "## Product Work", "## Stack")
 LINK_PATTERN = re.compile(r"\[[^]]+\]\(([^)]+)\)")
 
 
@@ -27,6 +25,9 @@ def validate(readme: Path) -> list[str]:
         local_target = (readme.parent / target.split("#", maxsplit=1)[0]).resolve()
         if not local_target.exists() or readme.parent.resolve() not in local_target.parents:
             errors.append(f"invalid local link: {target}")
+    catalog = readme.parent / "profile-catalog.json"
+    if catalog.exists():
+        errors.extend(validate_readme(readme, catalog))
     return errors
 
 
