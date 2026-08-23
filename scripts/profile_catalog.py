@@ -151,10 +151,6 @@ def _safe_link(entry: dict[str, Any]) -> str:
     return label
 
 
-def _access_label(entry: dict[str, Any]) -> str:
-    return "Public repository" if entry.get("profile_visibility") == "public" else "Private work"
-
-
 def _entry_line(entry: dict[str, Any]) -> str:
     marker = f"<!-- profile-catalog-entry: {entry['repository_id']} -->"
     link = _safe_link(entry)
@@ -163,7 +159,7 @@ def _entry_line(entry: dict[str, Any]) -> str:
         # A standalone HTML comment between Markdown table rows terminates the
         # table in GitHub's renderer. Keep the exact-once marker inside cell 1.
         return f"| {marker} {link} | {entry['release']} | {summary} |"
-    return f"{marker}\n- {link} — {summary} <sub>{_access_label(entry)}</sub>"
+    return f"{marker}\n- {link} — {summary}"
 
 
 def _plural(count: int) -> str:
@@ -250,7 +246,7 @@ def render_readme(catalog_path: Path, generated_at: str | None = None) -> str:
         "",
         "## How to explore",
         "",
-        "Start with the category highlights, then open a subcategory for the deeper catalog. Public projects link to their repositories; selected private projects use approved, role-safe descriptions and are labeled **Private work** without a repository link.",
+        "Start with the category highlights, then open a subcategory for the deeper catalog. Public projects link to their repositories; selected private projects use approved, role-safe descriptions without exposing repository links.",
         "",
         "For example: **Product Work → Developer Tooling → Agent-enabled → repository**.",
         "",

@@ -118,7 +118,8 @@ class ProfileContractTests(unittest.TestCase):
         self.assertIn("<strong>Developer Tooling</strong> · 2 repositories", rendered)
         self.assertIn("<summary>Agent-enabled · 1 repository</summary>", rendered)
         self.assertEqual(rendered.count("profile-catalog-entry: highlight"), 1)
-        self.assertIn("Private work", rendered)
+        self.assertNotIn("Private work", rendered)
+        self.assertNotIn("Public repository", rendered)
         self.assertNotIn("example.com/private", rendered)
 
     def test_public_release_marker_stays_inside_table_row(self) -> None:
