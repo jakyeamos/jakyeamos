@@ -12,20 +12,13 @@ I build product systems, developer tooling, applied AI workflows, and data-inten
 
 | Project | Release | Focus |
 | --- | --- | --- |
-<!-- profile-catalog-entry: repository:local_registered:268d9a032f221063 -->
-| [Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract) | PyPI `v0.2.0`; repo tag `v0.3.0` | Typed cases, rubrics, evidence, and result contracts for agent evaluation |
-<!-- profile-catalog-entry: repository:local_registered:2877f83be58d319d -->
-| [ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0) | npm `v0.5.0` | Static analysis for low-signal AI and review patterns |
-<!-- profile-catalog-entry: repository:local_registered:679df2172243b169 -->
-| [Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0) | npm `@pre-cr/* v0.1.0` | Changed-line coverage and pre-review readiness tooling |
-<!-- profile-catalog-entry: repository:local_registered:0642ab744b44afcb -->
-| [Quality Runner](https://github.com/jakyeamos/quality-runner/tree/v0.6.0) | PyPI `v0.6.0` | Proof-oriented repository quality checks and machine-readable evidence |
-<!-- profile-catalog-entry: repository:local_registered:6ae785ae2963e699 -->
-| [Research Domain Writing](https://github.com/jakyeamos/research-domain-writing) | PyPI `v0.1.0`; repo tag `v0.2.2` | Source-grounded writing workflows with claim discipline |
-<!-- profile-catalog-entry: repository:local_registered:dd8204836032c334 -->
-| [Terrace](https://github.com/jakyeamos/Terrace) | npm `v0.1.1` | Spec-driven workflow CLI for AI-assisted development |
-<!-- profile-catalog-entry: repository:local_registered:81cda39c2493ebf1 -->
-| [TMCP](https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8) | GitHub release `v0.5.8` | MCP/plugin workflows for audits, readiness, routing, and handoffs |
+| <!-- profile-catalog-entry: repository:local_registered:268d9a032f221063 --> [Agent Eval Contract](https://github.com/jakyeamos/agent-eval-contract) | PyPI `v0.2.0`; repo tag `v0.3.0` | Typed cases, rubrics, evidence, and result contracts for agent evaluation |
+| <!-- profile-catalog-entry: repository:local_registered:2877f83be58d319d --> [ESLint Anti-Slop](https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0) | npm `v0.5.0` | Static analysis for low-signal AI and review patterns |
+| <!-- profile-catalog-entry: repository:local_registered:679df2172243b169 --> [Pre-CR Suite](https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0) | npm `@pre-cr/* v0.1.0` | Changed-line coverage and pre-review readiness tooling |
+| <!-- profile-catalog-entry: repository:local_registered:0642ab744b44afcb --> [Quality Runner](https://github.com/jakyeamos/quality-runner/tree/v0.6.0) | PyPI `v0.6.0` | Proof-oriented repository quality checks and machine-readable evidence |
+| <!-- profile-catalog-entry: repository:local_registered:6ae785ae2963e699 --> [Research Domain Writing](https://github.com/jakyeamos/research-domain-writing) | PyPI `v0.1.0`; repo tag `v0.2.2` | Source-grounded writing workflows with claim discipline |
+| <!-- profile-catalog-entry: repository:local_registered:dd8204836032c334 --> [Terrace](https://github.com/jakyeamos/Terrace) | npm `v0.1.1` | Spec-driven workflow CLI for AI-assisted development |
+| <!-- profile-catalog-entry: repository:local_registered:81cda39c2493ebf1 --> [TMCP](https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8) | GitHub release `v0.5.8` | MCP/plugin workflows for audits, readiness, routing, and handoffs |
 
 ## How to explore
 
