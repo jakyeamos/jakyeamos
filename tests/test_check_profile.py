@@ -121,6 +121,18 @@ class ProfileContractTests(unittest.TestCase):
         self.assertIn("Private work", rendered)
         self.assertNotIn("example.com/private", rendered)
 
+    def test_public_release_marker_stays_inside_table_row(self) -> None:
+        release = entry(
+            "release", "quality-runner", display_name="Quality Runner",
+            release="PyPI `v0.6.0`", public_url="https://github.com/jakyeamos/quality-runner/tree/v0.6.0",
+        )
+        with tempfile.TemporaryDirectory() as raw_root:
+            catalog_path = Path(raw_root) / "profile-catalog.json"
+            catalog_path.write_text(json.dumps(catalog([release])), encoding="utf-8")
+            rendered = render_readme(catalog_path)
+        self.assertIn("| <!-- profile-catalog-entry: release --> [Quality Runner]", rendered)
+        self.assertNotIn("<!-- profile-catalog-entry: release -->\n|", rendered)
+
     def test_generated_readme_detects_stale_catalog_marker(self) -> None:
         root = Path(__file__).resolve().parents[1]
         catalog_path = root / "profile-catalog.json"

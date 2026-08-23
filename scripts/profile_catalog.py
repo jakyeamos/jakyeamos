@@ -160,7 +160,9 @@ def _entry_line(entry: dict[str, Any]) -> str:
     link = _safe_link(entry)
     summary = html.escape(str(entry["summary"]))
     if entry.get("name") in PUBLIC_RELEASES:
-        return f"{marker}\n| {link} | {entry['release']} | {summary} |"
+        # A standalone HTML comment between Markdown table rows terminates the
+        # table in GitHub's renderer. Keep the exact-once marker inside cell 1.
+        return f"| {marker} {link} | {entry['release']} | {summary} |"
     return f"{marker}\n- {link} — {summary} <sub>{_access_label(entry)}</sub>"
 
 
