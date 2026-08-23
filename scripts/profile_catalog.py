@@ -247,12 +247,6 @@ def render_readme(catalog_path: Path, generated_at: str | None = None) -> str:
         lines.append(_entry_line(entry))
     lines.extend([
         "",
-        "## How to explore",
-        "",
-        "Start with the category highlights, then open a subcategory for the deeper catalog. Public projects link to their repositories; selected private projects use approved, role-safe descriptions without exposing repository links.",
-        "",
-        "For example: **Product Work → Developer Tooling → Agent-enabled → repository**.",
-        "",
         "## Product Work",
         "",
     ])
