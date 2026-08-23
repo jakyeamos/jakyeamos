@@ -12,7 +12,7 @@ try:
 except ModuleNotFoundError:  # pragma: no cover - direct script execution
     from profile_catalog import validate_readme
 
-REQUIRED_HEADINGS = ("# Jakye Amos", "## Public Releases", "## Public Systems", "## Active Systems", "## Product Work", "## Stack")
+REQUIRED_HEADINGS = ("# Jakye Amos", "## Public Releases", "## How to explore", "## Product Work", "## Stack")
 LINK_PATTERN = re.compile(r"\[[^]]+\]\(([^)]+)\)")
 
 

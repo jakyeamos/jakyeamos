@@ -5,18 +5,19 @@
     "id": "jakyeamos-profile"
   },
   "owner": "Jakye Amos",
-  "last_reviewed": "2026-08-20",
+  "last_reviewed": "2026-08-23",
   "surfaces": [
     {
       "id": "profile-catalog-contract",
       "scope": "local catalog and onboarding inventory",
-      "path": "profile-catalog.json; scripts/profile_catalog.py; scripts/refresh_profile_catalog.py",
+      "path": "profile-catalog.json; scripts/profile_catalog.py; scripts/profile_policy.py; scripts/refresh_profile_catalog.py",
       "owner": "Jakye Amos",
       "condition": "A repository is added, removed, reclassified, or its catalog freshness, source commit, or visibility policy changes.",
       "operations": ["add", "change", "remove"],
       "validation": [
-        "Refresh from Pronto's read-only registered-repository inventory and verify one row per registered repository.",
-        "Validate schema, duplicate identities, freshness states, visibility policies, current-row requirements, and private URL boundaries.",
+        "Refresh from Pronto's read-only registered-repository inventory plus authenticated live GitHub provider evidence; verify one row per registered repository and a canonical provider-only LIS row.",
+        "Validate schema, duplicate identities, freshness states, provider_visibility, profile_visibility, readme_disposition, current-row requirements, and private URL boundaries.",
+        "Keep public catalog data privacy-safe: use opaque local identities and digested private provider identities; never persist local paths or private remote URLs.",
         "Keep missing, needs_review, stale, blocked, and unknown evidence distinct from fully_private; do not infer privacy from absence of provider evidence."
       ],
       "status": "applicable"
@@ -30,9 +31,9 @@
       "operations": ["add", "change", "remove"],
       "validation": [
         "Verify the catalog hash, source commit, inventory observation time, and rendered-entry count marker agree.",
-        "Verify every current public or explicitly approved private_readme_allowed row is rendered exactly once.",
-        "Verify fully_private, missing, stale, and needs_review rows are excluded; private README-allowed rows never emit a private URL automatically.",
-        "Verify Public Releases remains a flat table and other catalog sections support category and subcategory disclosure, including Product Work > Developer Tooling > Agent-enabled."
+        "Verify every current include row with public or explicitly approved private_readme_allowed visibility is rendered exactly once.",
+        "Verify exclude, defer, fully_private, missing, stale, and needs_review rows are omitted; private README-allowed rows never emit a private URL or provider identity.",
+        "Verify Public Releases remains a flat table and Product Work supplies category highlights plus nested subcategory disclosure, including Product Work > Developer Tooling > Agent-enabled."
       ],
       "status": "applicable"
     },

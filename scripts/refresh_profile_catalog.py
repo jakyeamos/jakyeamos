@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Refresh the profile catalog from Pronto's read-only registered-repository inventory."""
+"""Refresh the public-safe catalog from Pronto inventory and live GitHub evidence."""
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import re
 import sqlite3
 import subprocess
 from pathlib import Path
@@ -12,11 +14,18 @@ from typing import Any
 
 try:
     from scripts.profile_catalog import SCHEMA_VERSION, utc_now
+    from scripts.profile_policy import POLICY, PUBLIC_RELEASES
 except ModuleNotFoundError:  # pragma: no cover - direct script execution
     from profile_catalog import SCHEMA_VERSION, utc_now
-
+    from profile_policy import POLICY, PUBLIC_RELEASES
 
 DEFAULT_REGISTRY = Path.home() / "Library/Application Support/Pronto/registry.db"
+GITHUB_REMOTE = re.compile(r"(?:git@github\.com:|https://github\.com/)(?P<owner>[^/]+)/(?P<name>[^/]+?)(?:\.git)?$")
+
+
+def run_json(command: list[str]) -> Any:
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+    return json.loads(result.stdout)
 
 
 def git_head(path: Path) -> str:
@@ -27,148 +36,196 @@ def git_head(path: Path) -> str:
 def read_inventory(database: Path) -> list[dict[str, Any]]:
     connection = sqlite3.connect(database)
     try:
-        rows = connection.execute(
-            """
-            SELECT id,
-                   json_extract(payload_json, '$.name'),
-                   json_extract(payload_json, '$.path'),
-                   json_extract(payload_json, '$.remote_url'),
-                   json_extract(payload_json, '$.workspace.last_commit')
-              FROM repositories
-             ORDER BY id
-            """
-        ).fetchall()
+        rows = connection.execute("SELECT id, payload_json FROM repositories ORDER BY id").fetchall()
     finally:
         connection.close()
-    return [
-        {
-            "repository_id": row[0],
-            "name": row[1],
-            "path": row[2],
-            "remote_url": row[3],
-            "source_commit": row[4],
-        }
-        for row in rows
-    ]
+    inventory: list[dict[str, Any]] = []
+    for repository_id, payload_json in rows:
+        payload = json.loads(payload_json)
+        inventory.append({
+            "registry_id": repository_id,
+            "name": payload.get("name"),
+            "remote_url": payload.get("remote_url"),
+            "identity": (payload.get("project_compass") or {}).get("identity"),
+        })
+    return inventory
 
 
-PUBLIC_OVERRIDES: dict[str, dict[str, Any]] = {
-    "quality-runner": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "Quality Runner", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Proof-oriented repository quality checks and machine-readable evidence",
-        "release": "PyPI `v0.6.0`", "public_url": "https://github.com/jakyeamos/quality-runner/tree/v0.6.0",
-    },
-    "eslint-plugin-anti-slop": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "ESLint Anti-Slop", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Static analysis for low-signal AI and review patterns",
-        "release": "npm `v0.5.0`", "public_url": "https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0",
-    },
-    "pre-cr-suite-lsp": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "Pre-CR Suite", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Changed-line coverage and pre-review readiness tooling",
-        "release": "npm `@pre-cr/* v0.1.0`", "public_url": "https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0",
-    },
-    "agent-eval-contract": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "Agent Eval Contract", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Typed cases, rubrics, evidence, and result contracts for agent evaluation",
-        "release": "PyPI `v0.2.0`; repo tag `v0.3.0`", "public_url": "https://github.com/jakyeamos/agent-eval-contract",
-    },
-    "research-domain-writing": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "Research Domain Writing", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Source-grounded writing workflows with claim discipline",
-        "release": "PyPI `v0.1.0`; repo tag `v0.2.2`", "public_url": "https://github.com/jakyeamos/research-domain-writing",
-    },
-    "tmcp": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "TMCP", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "MCP/plugin workflows for audits, readiness, routing, and handoffs",
-        "release": "GitHub release `v0.5.8`", "public_url": "https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8",
-    },
-    "Terrace": {
-        "section": "Public Releases", "category": "Public Releases", "subcategory": "Releases",
-        "display_name": "Terrace", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Spec-driven workflow CLI for AI-assisted development",
-        "release": "npm `v0.1.1`", "public_url": "https://github.com/jakyeamos/Terrace",
-    },
-    "pronto": {
-        "section": "Public Systems", "category": "Public Systems", "subcategory": "Core Systems",
-        "display_name": "Pronto", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Local-first repository, worktree, quality-evidence, and release-preparation command center",
-        "public_url": "https://github.com/jakyeamos/pronto",
-    },
-    "jakyeamos-agent-skills": {
-        "section": "Public Systems", "category": "Public Systems", "subcategory": "Core Systems",
-        "display_name": "Portable Agentic Workbench", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Vendor-neutral context, routing, safety, evaluation, and durable-handoff contracts",
-        "public_url": "https://github.com/jakyeamos/jakyeamos-agentic-setup",
-    },
-    "context-compiler-contract": {
-        "section": "Public Systems", "category": "Public Systems", "subcategory": "Core Systems",
-        "display_name": "Context Compiler Contract", "visibility_policy": "public", "catalog_state": "current",
-        "summary": "Portable ESM validators for compiled-context results and routing manifests",
-        "public_url": "https://github.com/jakyeamos/context-compiler-contract",
-    },
-}
+def parse_remote(remote_url: str | None) -> tuple[str, str] | None:
+    if not remote_url:
+        return None
+    match = GITHUB_REMOTE.match(remote_url)
+    return (match.group("owner"), match.group("name")) if match else None
 
 
-def default_group(name: str) -> tuple[str, str]:
-    tool_signal = ("agent", "ai-", "quality", "pronto", "eslint", "pre-cr", "context", "contract", "router", "workflow", "automation", "browser", "codex", "skill", "readiness", "evidence", "failure", "change", "debug", "review", "route", "relay", "mac-control", "attentiond", "gmail", "profile", "research", "tmcp", "terrace")
-    return ("Developer Tooling", "Agent-enabled" if any(token in name.lower() for token in tool_signal) else "Unreviewed")
+def live_provider_inventory(local_inventory: list[dict[str, Any]]) -> dict[tuple[str, str], dict[str, Any]]:
+    owned = run_json([
+        "gh", "repo", "list", "jakyeamos", "--limit", "200", "--json",
+        "name,nameWithOwner,url,visibility,isFork,isArchived,description,owner",
+    ])
+    providers = {(row["owner"]["login"].lower(), row["name"].lower()): row for row in owned}
+    identities = {remote for item in local_inventory if (remote := parse_remote(item.get("remote_url")))}
+    identities.add(("jakyeamos", "LIS"))
+    for owner, name in sorted(identities):
+        key = (owner.lower(), name.lower())
+        if key in providers:
+            continue
+        try:
+            providers[key] = run_json([
+                "gh", "repo", "view", f"{owner}/{name}", "--json",
+                "name,nameWithOwner,url,visibility,isFork,isArchived,description,owner",
+            ])
+        except subprocess.CalledProcessError as error:
+            providers[key] = {"name": name, "owner": {"login": owner}, "visibility": "UNKNOWN", "provider_error": error.stderr.strip()}
+    return providers
+
+
+def _digest(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def _repository_id(scope: str, identity: str) -> str:
+    return f"repository:{scope}:{_digest(identity)[:16]}"
+
+
+def _provider_visibility(provider: dict[str, Any] | None) -> str:
+    raw = str((provider or {}).get("visibility") or "UNKNOWN").lower()
+    return raw if raw in {"public", "private"} else "unknown"
+
+
+def _summary(
+    identity: str | None,
+    policy: dict[str, Any],
+    previous: dict[str, Any],
+) -> tuple[str | None, str | None]:
+    if policy.get("summary"):
+        value = policy["summary"]
+        source = policy.get("summary_source", "curated-profile-policy")
+    elif previous.get("summary"):
+        value = previous["summary"]
+        source = previous.get("summary_source", "approved-catalog-metadata")
+    else:
+        value = identity
+        source = "project-compass" if identity else None
+    if not value:
+        return None, None
+    text = " ".join(str(value).split())
+    for prefix in ("A standalone ", "A local-first ", "A private ", "A public ", "An archived historical ", "An ", "A "):
+        if text.startswith(prefix):
+            text = text[len(prefix):]
+            text = text[:1].upper() + text[1:]
+            break
+    if len(text) <= 240:
+        return text, source
+    sentence = text.split(". ", 1)[0].rstrip(".") + "."
+    summary = sentence if len(sentence) <= 240 else text[:236].rstrip(" ,;:") + "…"
+    return summary, source
+
+
+def _entry(
+    *,
+    name: str,
+    inventory_scope: str,
+    opaque_identity: str,
+    provider_identity: tuple[str, str] | None,
+    provider: dict[str, Any] | None,
+    identity: str | None,
+    previous: dict[str, Any],
+    observed_at: str,
+) -> dict[str, Any]:
+    policy = POLICY.get(name, {"readme_disposition": "defer", "review_reason": "No editorial policy is registered."})
+    disposition = policy["readme_disposition"]
+    provider_visibility = _provider_visibility(provider)
+    if disposition == "defer":
+        state, profile_visibility = "needs_review", None
+    elif provider_visibility == "unknown":
+        state, profile_visibility, disposition = "blocked", None, "defer"
+    elif disposition == "include":
+        state = "current"
+        profile_visibility = "public" if provider_visibility == "public" else "private_readme_allowed"
+    else:
+        state = "current"
+        profile_visibility = "public" if provider_visibility == "public" else "fully_private"
+    summary, summary_source = _summary(identity, policy, previous) if disposition == "include" else (None, None)
+    public_url = None
+    if disposition == "include" and profile_visibility == "public" and provider:
+        public_url = provider.get("url")
+    release = None
+    if name in PUBLIC_RELEASES and disposition == "include" and profile_visibility == "public":
+        release = PUBLIC_RELEASES[name]["release"]
+        public_url = PUBLIC_RELEASES[name]["public_url"]
+    entry: dict[str, Any] = {
+        "repository_id": _repository_id(inventory_scope, opaque_identity),
+        "inventory_scope": inventory_scope,
+        "name": name,
+        "display_name": policy.get("display_name", name),
+        "provider_visibility": provider_visibility,
+        "profile_visibility": profile_visibility,
+        "readme_disposition": disposition,
+        "catalog_state": state,
+        "category": policy.get("category"),
+        "subcategory": policy.get("subcategory"),
+        "featured_rank": policy.get("featured_rank"),
+        "summary": summary,
+        "summary_source": summary_source,
+        "release": release,
+        "public_url": public_url,
+        "provider_is_fork": (provider or {}).get("isFork"),
+        "provider_is_archived": (provider or {}).get("isArchived"),
+        "provider_observed_at": observed_at,
+    }
+    if provider_identity:
+        canonical = f"github:{provider_identity[0]}/{provider_identity[1]}"
+        if provider_visibility == "public":
+            entry["provider_identity"] = canonical
+        else:
+            entry["provider_identity_digest"] = _digest(canonical)
+    if policy.get("exclusion_reason"):
+        entry["exclusion_reason"] = policy["exclusion_reason"]
+    if policy.get("review_reason"):
+        entry["review_reason"] = policy["review_reason"]
+    return entry
 
 
 def build_catalog(database: Path, profile_root: Path, observed_at: str) -> dict[str, Any]:
     inventory = read_inventory(database)
     previous_path = profile_root / "profile-catalog.json"
-    previous: dict[str, dict[str, Any]] = {}
-    if previous_path.exists():
-        previous = {entry["repository_id"]: entry for entry in json.loads(previous_path.read_text(encoding="utf-8")).get("entries", [])}
-    source_repo = Path("/Users/jakyeamos/Documents/pronto")
+    previous_entries = json.loads(previous_path.read_text(encoding="utf-8")).get("entries", []) if previous_path.exists() else []
+    previous = {entry.get("name"): entry for entry in previous_entries}
+    providers = live_provider_inventory(inventory)
     entries: list[dict[str, Any]] = []
     for item in inventory:
-        prior = previous.get(item["repository_id"], {})
-        override = PUBLIC_OVERRIDES.get(item["name"], {})
-        category, subcategory = default_group(item["name"])
-        entry = {
-            "repository_id": item["repository_id"],
-            "name": item["name"],
-            "path": item["path"],
-            "remote_url": item["remote_url"],
-            "section": prior.get("section", "Product Work"),
-            "category": prior.get("category", category),
-            "subcategory": prior.get("subcategory", subcategory),
-            "display_name": prior.get("display_name", item["name"]),
-            "visibility_policy": prior.get("visibility_policy"),
-            "catalog_state": prior.get("catalog_state", "needs_review"),
-            "summary": prior.get("summary"),
-            "release": prior.get("release"),
-            "public_url": prior.get("public_url"),
-            "source_commit": item["source_commit"],
-            "inventory_observed_at": observed_at,
-        }
-        entry.update(override)
-        entries.append(entry)
-    current_count = sum(entry["catalog_state"] == "current" for entry in entries)
-    freshness_state = "current" if current_count == len(entries) else "needs_review"
+        remote = parse_remote(item.get("remote_url"))
+        provider = providers.get((remote[0].lower(), remote[1].lower())) if remote else None
+        entries.append(_entry(
+            name=item["name"], inventory_scope="local_registered", opaque_identity=item["registry_id"],
+            provider_identity=remote, provider=provider, identity=item.get("identity"),
+            previous=previous.get(item["name"], {}), observed_at=observed_at,
+        ))
+    lis_identity = ("jakyeamos", "LIS")
+    entries.append(_entry(
+        name="LIS", inventory_scope="provider_only", opaque_identity="github:jakyeamos/LIS",
+        provider_identity=lis_identity, provider=providers.get(("jakyeamos", "lis")), identity=None,
+        previous=previous.get("LIS", {}), observed_at=observed_at,
+    ))
+    entries.sort(key=lambda entry: (entry["inventory_scope"], entry["name"].lower()))
+    counts = {state: sum(entry["catalog_state"] == state for entry in entries) for state in ("current", "needs_review", "blocked")}
+    freshness_state = "current" if counts["current"] == len(entries) else "needs_review"
     return {
         "schema_version": SCHEMA_VERSION,
         "inventory": {
-            "source": "pronto-registry",
-            "registry_database": str(database),
-            "source_repository": str(source_repo),
-            "source_commit": git_head(source_repo),
+            "source": "pronto-registry+github-provider",
+            "source_commit": git_head(Path("/Users/jakyeamos/Documents/pronto")),
             "observed_at": observed_at,
-            "registered_repository_count": len(entries),
+            "registered_repository_count": len(inventory),
+            "provider_only_count": 1,
             "catalog_row_count": len(entries),
         },
         "freshness": {
             "state": freshness_state,
             "window_minutes": 2880,
-            "reason": "Every registered repository has a row; rows still require explicit owner review before README eligibility.",
+            "counts": counts,
+            "reason": "README eligibility is limited to current rows with explicit provider and profile visibility evidence.",
         },
         "entries": entries,
     }
@@ -183,7 +240,11 @@ def main() -> int:
     catalog = build_catalog(args.registry, args.profile_root, args.observed_at)
     destination = args.profile_root / "profile-catalog.json"
     destination.write_text(json.dumps(catalog, indent=2, sort_keys=False) + "\n", encoding="utf-8")
-    print(json.dumps({"status": "written", "path": str(destination), "repository_count": len(catalog["entries"]), "freshness": catalog["freshness"]}, indent=2))
+    print(json.dumps({
+        "status": "written", "path": str(destination), "repository_count": len(catalog["entries"]),
+        "included": sum(entry["readme_disposition"] == "include" for entry in catalog["entries"]),
+        "freshness": catalog["freshness"],
+    }, indent=2))
     return 0
 
 
