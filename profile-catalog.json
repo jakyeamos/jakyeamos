@@ -5,9 +5,9 @@
     "registry_database": "/Users/jakyeamos/Library/Application Support/Pronto/registry.db",
     "source_repository": "/Users/jakyeamos/Documents/pronto",
     "source_commit": "bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63",
-    "observed_at": "2026-08-22T03:49:07Z",
-    "registered_repository_count": 74,
-    "catalog_row_count": 74
+    "observed_at": "2026-08-23T01:34:12Z",
+    "registered_repository_count": 76,
+    "catalog_row_count": 76
   },
   "freshness": {
     "state": "needs_review",
@@ -30,7 +30,7 @@
       "release": null,
       "public_url": "https://github.com/jakyeamos/pronto",
       "source_commit": "bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/AIOS",
@@ -47,7 +47,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "b44bcdb394e96696aa451864a24424301171353d",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/AIOS/skills-library",
@@ -64,7 +64,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "5e10e754f1a7ffde5f5683ad47e9d17382a4a11c",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BBDSE/CLFE",
@@ -81,7 +81,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "57c72673ad2dc72d6bdefa323448a0285fb9df91",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BBDSE/RTE Transferable Signals",
@@ -98,7 +98,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "d29ffad3505e590c1afe0d606ef70f2d30830250",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BBDSE/cap-fit-builder",
@@ -115,7 +115,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "11e27c0488d208661e24382a8ecfc2fdcd927a0f",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BBDSE/signal-lab",
@@ -132,7 +132,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "b1f04187c352e94bea5d09f00d934e0d2f749137",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BBDSE/womens-stats",
@@ -149,7 +149,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "707c385a903f8b6d3227a4fbd6996f60a5be475a",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BIP-Console",
@@ -166,7 +166,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "19f3ac5ba3bdd0441dcd82a015345d24e7d2c697",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/Bballedu",
@@ -183,7 +183,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "84221e61aca0ea200eb8c3411fd551f1fe26fe51",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/BidCamp",
@@ -200,7 +200,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "80fe58b6553b5911b45109ee7d74cdac26dee8aa",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/Book",
@@ -217,7 +217,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "9e65f56aca1d2101f1358a0590f37624c1874487",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/Crimclock",
@@ -234,7 +234,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "7a33cabf0e11849efb183617ff9b53fe636bd8de",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/Dsci-proj",
@@ -251,7 +251,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "915462924375239918802e22772d62b84d670fdd",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/Fantasy",
@@ -268,7 +268,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "b3443a26cfe8e12f3768510395df426fd6466e2f",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/LaxDS",
@@ -285,7 +285,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "45d125169e109fe9ef59cf8857b1fb5e3c3c651c",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/Terrace",
@@ -302,7 +302,7 @@
       "release": "npm `v0.1.1`",
       "public_url": "https://github.com/jakyeamos/Terrace",
       "source_commit": "e60421fa5fd10d8d8d174743cbf1fd7c02f77e98",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/agent-eval-contract",
@@ -319,7 +319,7 @@
       "release": "PyPI `v0.2.0`; repo tag `v0.3.0`",
       "public_url": "https://github.com/jakyeamos/agent-eval-contract",
       "source_commit": "6850a9a7ba7fe2e7e56e76ded9d6f2f148a1cb33",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/agent-eval-runtime",
@@ -336,7 +336,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "adde85915635d22d88ab7cf9537e1d65bc43cc77",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/agent-router",
@@ -353,7 +353,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "e4cf41908be9dbe7d1ea6f03aa18b0c607ed02aa",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/ai-context-runtime",
@@ -370,7 +370,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "9d233b1ba5394059dd198d4392da49eab6043baf",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/ai-workflow-leverage",
@@ -387,7 +387,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "2be5e199431a78acc10fe29f75b933cb5612db4e",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/attentiond",
@@ -404,7 +404,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "324dea6ddbc537f6a256e8bae0cf84ba6ceafbc5",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/automation-flight-recorder",
@@ -421,7 +421,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "2fe560f698e0888d9e9be6c9c8ed97e5e2fe4cf1",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/behavior-coverage-atlas",
@@ -438,7 +438,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "a3cb5a2441f988adead56ff1bad99d07a1281996",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/browser-control",
@@ -455,7 +455,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "220cdb284542ca5a98ca70683969801734c0f6b8",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/career-ops",
@@ -472,7 +472,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "ea8ad0edfeae4cc6a815a250afe747089ca082a6",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/change-integration-simulator",
@@ -489,7 +489,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "6fcd6942653324879dd3f196aaf04e7a55515f3f",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/change-radius",
@@ -506,7 +506,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "29fdeb7838cb706b40f1a095b9bd7de1b1afe869",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/ci-incident-router",
@@ -523,7 +523,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "6b828dfac58233e6f3f01c0b710e19fe5cc89da0",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/claude-config",
@@ -540,7 +540,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "735da9aa7525acba49a69d46188da38aeb6d53d2",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/codex",
@@ -557,7 +557,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "8931715b895ff7d3026dcb35419fc38b4a520e2c",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/context-compiler-contract",
@@ -574,7 +574,7 @@
       "release": null,
       "public_url": "https://github.com/jakyeamos/context-compiler-contract",
       "source_commit": "bd2b484c5ad337062e8961f6c85d214a60a9e4b3",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/contract-watch",
@@ -591,7 +591,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "cba7e8019b2ea1ffa09298a57f2000577d67e73b",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/daily-front-page",
@@ -608,7 +608,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "dab6a026ff65f93244f58c9b648770e397f829e2",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/debug-trail",
@@ -625,7 +625,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "e71bbf4585c78a532a77344ce422e26253c9849f",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/deletion-proof-workbench",
@@ -642,7 +642,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "ee494415a3df5b308170865a7db0a1499ca45e59",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/dispatches-from-cyberspace",
@@ -659,7 +659,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "9ea175d70dc69ef4462a73cbcf34c2752168e1e3",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/dotfiles",
@@ -676,7 +676,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "ed4e5d433c0f0b98bf2b24026db6c763f924e78a",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/editors-desk-newsletter",
@@ -693,7 +693,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "550d7ead8a288805967c797ce312c46748bfa9fc",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/eslint-plugin-anti-slop",
@@ -710,7 +710,7 @@
       "release": "npm `v0.5.0`",
       "public_url": "https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0",
       "source_commit": "3e25156c45153218389cd6407376c9c2ac253293",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/evidence-replay",
@@ -727,7 +727,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "cec36a699ba4b152deaca633f173746186bd45df",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/failure-capsule",
@@ -744,7 +744,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "180b0f64557ed8992c70ed66b22a1ca4dfedb2b6",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/fleet-radar",
@@ -761,7 +761,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "93d33880f894cc2e0c8c1d9d8c10a4c36f56e328",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/gmail-mcp-bridge",
@@ -778,7 +778,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "65d6aae8726b5fdbfff3a7cd70608d54fd2d989f",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/jakye-skill-family",
@@ -795,7 +795,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "8dde4d0dd57d6adcf2e969dc71cda5021adcf99a",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/jakyeamos-agent-skills",
@@ -812,7 +812,7 @@
       "release": null,
       "public_url": "https://github.com/jakyeamos/jakyeamos-agentic-setup",
       "source_commit": "91007720daf22384884ebb3aea8e0fa2bea912e7",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/jakyeamos-agentic-setup-private",
@@ -829,7 +829,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "1d1f4f6e3c16f80a693ad8f59f15f9819bb849f1",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/jakyeamos-profile",
@@ -846,7 +846,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "be2b6f8bb87549a80ad29ea156b59809d6721777",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/mac-control",
@@ -863,7 +863,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "9479ebac82e0f7225efce5fee7f786a7a38953f6",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/marketing-autoresearch",
@@ -880,7 +880,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "1b062fb0a5d3ed4340264e88259af07df29680a3",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/paperwhite-web",
@@ -897,7 +897,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "c3a66031e3919dca2af2eee35d65f948b12cc649",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/participant-dedup",
@@ -914,7 +914,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "28775bc488bf0ee1750320047b979262e4c0059f",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/pattern-atlas",
@@ -931,7 +931,41 @@
       "release": null,
       "public_url": null,
       "source_commit": "2ece4fbf2b36c00b891a098cbb6cb3fe8d1e4edb",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
+    },
+    {
+      "repository_id": "repository:/Users/jakyeamos/projects/pixel-art-workbench",
+      "name": "pixel-art-workbench",
+      "path": "/Users/jakyeamos/projects/pixel-art-workbench",
+      "remote_url": "git@github.com:jakyeamos/pixel-art-workbench.git",
+      "section": "Product Work",
+      "category": "Developer Tooling",
+      "subcategory": "Unreviewed",
+      "display_name": "pixel-art-workbench",
+      "visibility_policy": null,
+      "catalog_state": "needs_review",
+      "summary": null,
+      "release": null,
+      "public_url": null,
+      "source_commit": "e4c17b70ff64f91b671d44195a714639de256c51",
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
+    },
+    {
+      "repository_id": "repository:/Users/jakyeamos/projects/playlist-appender",
+      "name": "playlist-appender",
+      "path": "/Users/jakyeamos/projects/playlist-appender",
+      "remote_url": null,
+      "section": "Product Work",
+      "category": "Music and Media",
+      "subcategory": "Local Tools",
+      "display_name": "Playlist Appender",
+      "visibility_policy": "fully_private",
+      "catalog_state": "current",
+      "summary": "A local-first tool for explaining playlists, reviewing deterministic recommendations, and applying explicitly approved Spotify changes.",
+      "release": null,
+      "public_url": null,
+      "source_commit": "58de8548bceaacadf0a528eb3da3803dc0d5b278",
+      "inventory_observed_at": "2026-08-23T01:45:00Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/portfolio",
@@ -948,7 +982,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "ed0a6a4b8195ec6f792f79924177406d934a7ce2",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/pre-cr-suite-lsp",
@@ -965,7 +999,7 @@
       "release": "npm `@pre-cr/* v0.1.0`",
       "public_url": "https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0",
       "source_commit": "43e693943fb3099ff6bcb06c1adf532aa951a03b",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/quality-lens",
@@ -982,7 +1016,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "1cf3179d7336da5a38510c486c1122f4677230e3",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/quality-runner",
@@ -999,7 +1033,7 @@
       "release": "PyPI `v0.6.0`",
       "public_url": "https://github.com/jakyeamos/quality-runner/tree/v0.6.0",
       "source_commit": "c357cad61bc5dcc6fcaf8b504965346a43630e5e",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/quality-setup",
@@ -1016,7 +1050,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "d805cf6aab129e2287421e53d3543cf6ecb874c5",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/readiness-inspector",
@@ -1033,7 +1067,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "bd2114d940971a332aa040e832278bdfc8474c1e",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/relay",
@@ -1050,7 +1084,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "b75667be28ddf37cd15cbc40e67a79f81b5601d7",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/remediation-canvas",
@@ -1067,7 +1101,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "93662319dcf5f69968179734d4cba5eb2882c8d3",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/remodelvision",
@@ -1084,7 +1118,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "8c2e3bb375587389204165fc290cd6599c2fa416",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/research-domain-writing",
@@ -1101,7 +1135,7 @@
       "release": "PyPI `v0.1.0`; repo tag `v0.2.2`",
       "public_url": "https://github.com/jakyeamos/research-domain-writing",
       "source_commit": "5eb81e132894205c324be89a98fb89d949342fb5",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/review-attention-map",
@@ -1118,7 +1152,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "e6da8202b77642a47aa868b0f56bb56f15c39d2d",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/review-sandbox",
@@ -1135,7 +1169,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "e771ccef932be59d094b1c71cff09301112d859d",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/rule-lab",
@@ -1152,7 +1186,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "9ee744ee59915c4c93b13fb783fb15fd8e23b9cc",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/soundscape-app",
@@ -1169,7 +1203,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "aa37a371990ec1a69e7635372c1d7fa49687cd65",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/steward",
@@ -1186,7 +1220,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "7d94462aa969c4bb4aad597cee47ef1d8a191889",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/structural-diff",
@@ -1203,7 +1237,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "1b3ad82fb0cc055e81ee1a44544cc3083ce4507a",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/tenure",
@@ -1220,7 +1254,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "5dd52328a1a847466db8a7f12c7e6f71b468182e",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/test-intent-registry",
@@ -1237,7 +1271,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "7f3316cee6bfe5c7750ac88721d19ac742dd3a76",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/tmcp",
@@ -1254,7 +1288,7 @@
       "release": "GitHub release `v0.5.8`",
       "public_url": "https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8",
       "source_commit": "bcfef0c2960cfc33a4e58d0541f21c85114e1120",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     },
     {
       "repository_id": "repository:/Users/jakyeamos/projects/workflow-gateboard",
@@ -1271,7 +1305,7 @@
       "release": null,
       "public_url": null,
       "source_commit": "55a37800d82b9902a71b91df65ae8e6f0bb94358",
-      "inventory_observed_at": "2026-08-22T03:49:07Z"
+      "inventory_observed_at": "2026-08-23T01:34:12Z"
     }
   ]
 }
