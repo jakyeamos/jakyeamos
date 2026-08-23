@@ -45,7 +45,7 @@ Tools for agents, code quality, review, evidence, and controlled automation.
 - Structural Diff — Deterministic local analyzer that turns TypeScript and JavaScript change structure into evidence-bound review surfaces.
 
 <details>
-<summary>Agent-enabled · 7 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Agent-enabled · 7 repositories</summary>
 
 Infrastructure and contracts that make agent workflows bounded, inspectable, and reusable.
 
@@ -73,7 +73,7 @@ Infrastructure and contracts that make agent workflows bounded, inspectable, and
 </details>
 
 <details>
-<summary>Quality and Review · 10 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Quality and Review · 10 repositories</summary>
 
 Developer-facing checks and review surfaces that make software quality easier to act on.
 
@@ -110,7 +110,7 @@ Developer-facing checks and review surfaces that make software quality easier to
 </details>
 
 <details>
-<summary>Change and Evidence · 9 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Change and Evidence · 9 repositories</summary>
 
 Tools that explain changes, preserve evidence, and reduce integration uncertainty.
 
@@ -144,7 +144,7 @@ Tools that explain changes, preserve evidence, and reduce integration uncertaint
 </details>
 
 <details>
-<summary>Automation and Control · 5 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Automation and Control · 5 repositories</summary>
 
 Guarded automation and local control planes with explicit human boundaries.
 
@@ -184,7 +184,7 @@ End-to-end products that turn domain workflows into usable software systems.
 - Tenure — Knowledge operating system that turns specialist expertise into permissioned guidance and surfaces process gaps and staleness.
 
 <details>
-<summary>Sports and Analytics · 5 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Sports and Analytics · 5 repositories</summary>
 
 Sports products and analytical systems spanning training, scouting, and modeling.
 
@@ -206,7 +206,7 @@ Sports products and analytical systems spanning training, scouting, and modeling
 </details>
 
 <details>
-<summary>Work and Operations · 3 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Work and Operations · 3 repositories</summary>
 
 Operational software for teams, professionals, and repeatable business workflows.
 
@@ -240,7 +240,7 @@ Experiments and products for media, publishing, and visual interaction.
 - [Book](https://github.com/jakyeamos/Book) — Browser-based interactive reading and authoring product that presents chapter fragments as cinematic, chapter-specific reading experiences and supports a private Author Studio for content operations.
 
 <details>
-<summary>Music and Media · 1 repository</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Music and Media · 1 repository</summary>
 
 Consumer experiences for music, taste, and media discovery.
 
@@ -250,7 +250,7 @@ Consumer experiences for music, taste, and media discovery.
 </details>
 
 <details>
-<summary>Publishing · 1 repository</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Publishing · 1 repository</summary>
 
 Editorial and portfolio systems for presenting authored work.
 
@@ -275,7 +275,7 @@ Applied research, data science, and continuing academic work.
 - RemodelVision — Continuing school project that turns a room photo and renovation brief into a visual concept and indicative cost estimate.
 
 <details>
-<summary>Data Science · 4 repositories</summary>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Data Science · 4 repositories</summary>
 
 Research pipelines and inspectable analytical applications.
 

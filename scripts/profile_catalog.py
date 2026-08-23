@@ -198,7 +198,10 @@ def _render_catalog(entries: list[dict[str, Any]]) -> list[str]:
                 continue
             lines.extend([
                 "<details>",
-                f"<summary>{html.escape(subcategory)} · {len(remaining)} {_plural(len(remaining))}</summary>",
+                (
+                    f"<summary>&nbsp;&nbsp;<span aria-hidden=\"true\">↳</span>&nbsp;"
+                    f"{html.escape(subcategory)} · {len(remaining)} {_plural(len(remaining))}</summary>"
+                ),
                 "",
                 html.escape(SUBCATEGORY_METADATA[subcategory]),
                 "",

@@ -116,11 +116,37 @@ class ProfileContractTests(unittest.TestCase):
             rendered = readme.read_text(encoding="utf-8")
             self.assertEqual(validate_readme(readme, catalog_path), [])
         self.assertIn("<strong>Developer Tooling</strong> · 2 repositories", rendered)
-        self.assertIn("<summary>Agent-enabled · 1 repository</summary>", rendered)
+        self.assertIn(
+            '<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Agent-enabled · 1 repository</summary>',
+            rendered,
+        )
         self.assertEqual(rendered.count("profile-catalog-entry: highlight"), 1)
         self.assertNotIn("Private work", rendered)
         self.assertNotIn("Public repository", rendered)
         self.assertNotIn("example.com/private", rendered)
+
+    def test_product_subcategories_are_visually_subordinate(self) -> None:
+        sports = entry(
+            "sports", "court-vision", category="Product Systems", subcategory="Sports and Analytics"
+        )
+        operations = entry(
+            "operations", "bidcamp", category="Product Systems", subcategory="Work and Operations"
+        )
+        with tempfile.TemporaryDirectory() as raw_root:
+            catalog_path = Path(raw_root) / "profile-catalog.json"
+            catalog_path.write_text(json.dumps(catalog([sports, operations])), encoding="utf-8")
+            rendered = render_readme(catalog_path)
+        self.assertIn("<strong>Product Systems</strong> · 2 repositories", rendered)
+        self.assertIn(
+            '<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Sports and Analytics · 1 repository</summary>',
+            rendered,
+        )
+        self.assertIn(
+            '<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Work and Operations · 1 repository</summary>',
+            rendered,
+        )
+        self.assertNotIn("<summary>Sports and Analytics ·", rendered)
+        self.assertNotIn("<summary>Work and Operations ·", rendered)
 
     def test_public_release_marker_stays_inside_table_row(self) -> None:
         release = entry(
