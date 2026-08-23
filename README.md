@@ -20,12 +20,6 @@ I build product systems, developer tooling, applied AI workflows, and data-inten
 | <!-- profile-catalog-entry: repository:local_registered:dd8204836032c334 --> [Terrace](https://github.com/jakyeamos/Terrace) | npm `v0.1.1` | Spec-driven workflow CLI for AI-assisted development |
 | <!-- profile-catalog-entry: repository:local_registered:81cda39c2493ebf1 --> [TMCP](https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8) | GitHub release `v0.5.8` | MCP/plugin workflows for audits, readiness, routing, and handoffs |
 
-## How to explore
-
-Start with the category highlights, then open a subcategory for the deeper catalog. Public projects link to their repositories; selected private projects use approved, role-safe descriptions without exposing repository links.
-
-For example: **Product Work → Developer Tooling → Agent-enabled → repository**.
-
 ## Product Work
 
 <details>
