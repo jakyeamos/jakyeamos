@@ -8,7 +8,7 @@ I build developer tools, backend-heavy product systems, and local-first AI workf
 
 ---
 
-<!-- profile-catalog: schema=jakyeamos-profile-catalog/v1 catalog_sha256=6faa093eb177591ee7915396fffffd2b21c39e64790046c3c8e316ef63a455f3 source_commit=bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63 inventory_observed_at=2026-08-23T01:34:12Z rendered_entry_count=10 -->
+<!-- profile-catalog: schema=jakyeamos-profile-catalog/v1 catalog_sha256=2804a9f1e1deb2fe94fd6f4dfab5160ed6f6244a17149ce17b5211f0d4c69883 source_commit=bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63 inventory_observed_at=2026-08-23T01:34:12Z rendered_entry_count=10 -->
 
 ## Public Releases
 
