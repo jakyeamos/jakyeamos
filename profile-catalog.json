@@ -2,17 +2,17 @@
   "schema_version": "jakyeamos-profile-catalog/v2",
   "inventory": {
     "source": "pronto-registry+github-provider",
-    "source_commit": "bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63",
-    "observed_at": "2026-08-23T04:09:44Z",
-    "registered_repository_count": 76,
+    "source_commit": "f460fa74c3d90388696912eb58919b60abb49d25",
+    "observed_at": "2026-08-24T03:09:00Z",
+    "registered_repository_count": 77,
     "provider_only_count": 1,
-    "catalog_row_count": 77
+    "catalog_row_count": 78
   },
   "freshness": {
     "state": "needs_review",
     "window_minutes": 2880,
     "counts": {
-      "current": 73,
+      "current": 74,
       "needs_review": 4,
       "blocked": 0
     },
@@ -37,7 +37,7 @@
       "public_url": "https://github.com/jakyeamos/agent-eval-contract",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/agent-eval-contract"
     },
     {
@@ -58,7 +58,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "aa149d934b3b110fb58f793e68c9d0256d4644e26023cfa1edd0f575cbd729b4"
     },
     {
@@ -79,7 +79,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "e74e04f70e7e61f2761691b34a2e97c80a7057f0d83266e4d2f8ffc3452f6ffe"
     },
     {
@@ -100,7 +100,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "a0c0117d9c82004d18c425cb313fd25e89be2a04c6d1f5d0c7e181599f07218a"
     },
     {
@@ -121,7 +121,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "74178a05124998de3f05b90a6fff71d141c8e2cb4f885a7e2c22be2edd842d3d"
     },
     {
@@ -142,7 +142,7 @@
       "public_url": "https://github.com/jakyeamos/AIOS",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/AIOS"
     },
     {
@@ -163,7 +163,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "03c1573bb324d93d8c95a13e340c737f91957be43e5024c3600dec4b73e90f1d"
     },
     {
@@ -184,7 +184,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "7c1117d5ab4696aa6ed3103afc4f1dad1d54883138a12044f9d717fd6d13d314"
     },
     {
@@ -205,7 +205,7 @@
       "public_url": "https://github.com/jakyeamos/Bball",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/Bball"
     },
     {
@@ -226,7 +226,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "c8b6eda2ac36d2d6bf2407d63238e76c256219923ea59d46fadb5e3abb67c577"
     },
     {
@@ -247,7 +247,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "5df7a7f7b489c2f60050e13eb322e7f4032abae98a9b6800188226127f1ba7b7"
     },
     {
@@ -268,7 +268,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "552c6eb2e3f7029edab100c5f2367f01d7c05e5e7b12677e7d8bd3ed6b65cdee",
       "exclusion_reason": "Archived and superseded by maintained portfolio systems."
     },
@@ -290,7 +290,7 @@
       "public_url": "https://github.com/jakyeamos/Book",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/Book"
     },
     {
@@ -311,7 +311,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "2ec194ab7bd2c5af3ee388ce5039bc401e333bfa54998f6d197d533e421edcd2"
     },
     {
@@ -332,7 +332,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "90e93321ce597dabfeef16be6c635a50e382e9db21502c80bbb38aef43427450"
     },
     {
@@ -353,7 +353,7 @@
       "public_url": "https://github.com/jakyeamos/job-search",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/job-search"
     },
     {
@@ -374,7 +374,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "b7a7f2c4b952a0c42aeedf9733a9de3c2b3563c573a78b7b6e48732463399afc"
     },
     {
@@ -395,7 +395,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "2a5425f1bc03e9272cfe8bb5e420f1095a8d94e0f4f3d25c02fdf366ed182083"
     },
     {
@@ -416,7 +416,7 @@
       "public_url": "https://github.com/jakyeamos/ci-incident-router",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/ci-incident-router"
     },
     {
@@ -437,7 +437,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "371bc45783d9e18a3a0a0a02c580eb8434ebfce81372db74bee1c7a30acd87ef",
       "exclusion_reason": "Personal compatibility configuration rather than a standalone portfolio project."
     },
@@ -459,7 +459,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "8a7149f2656ff75d27e6c5e06459f840ea0bafe64e6a287c1f6664bd50f034ba"
     },
     {
@@ -480,7 +480,7 @@
       "public_url": null,
       "provider_is_fork": true,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/codex",
       "exclusion_reason": "Provider-confirmed fork without a distinct portfolio claim."
     },
@@ -502,7 +502,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "a1e0416a409c0a17d6de54a773684502195730b9ec4bef46d14195292b0cb79d"
     },
     {
@@ -523,7 +523,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "c18275e7f284afdba871eb32bf2d4675c9409ba4cb81c9645b86d335bb0b5eca"
     },
     {
@@ -544,7 +544,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "ed400e3dc5d36c41dac29598035ce0da429f45fa120fb0aa3308b2390aa51983"
     },
     {
@@ -565,7 +565,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "1ee28dc82a0a9e4401d5a55c1ee5785d26fdd614960c89a92cbf5cd02fa881f5",
       "exclusion_reason": "Personal information surface with no safe recruiter-facing projection."
     },
@@ -587,7 +587,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "f4127b010f462d1a2dd1735847c66c04cb9cf7e58f2bdf877394b1442cc4ae1c"
     },
     {
@@ -608,7 +608,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "a5984484f39699fc104c3ba3bc8a74228a09586e3c6ee600e005754732853cdb"
     },
     {
@@ -629,7 +629,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "a5c0bc77cff08a389760ab0cb5f0f6f808d27113c31581195962dff8a3f82b38"
     },
     {
@@ -650,7 +650,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "da418e256768d0a0dd3f3558e037a9f2f521ca859391c6054a815ede98fc10a9",
       "exclusion_reason": "Personal workstation infrastructure."
     },
@@ -672,7 +672,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "bf6e6947b9a1eb77adb3d19781143454de297c27dd04d70e70e26aadb7aad9a5"
     },
     {
@@ -680,7 +680,7 @@
       "inventory_scope": "local_registered",
       "name": "editors-desk-newsletter",
       "display_name": "editors-desk-newsletter",
-      "provider_visibility": "unknown",
+      "provider_visibility": "private",
       "profile_visibility": null,
       "readme_disposition": "defer",
       "catalog_state": "needs_review",
@@ -691,10 +691,11 @@
       "summary_source": null,
       "release": null,
       "public_url": null,
-      "provider_is_fork": null,
-      "provider_is_archived": null,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
-      "review_reason": "No configured remote."
+      "provider_is_fork": false,
+      "provider_is_archived": false,
+      "provider_observed_at": "2026-08-24T03:09:00Z",
+      "provider_identity_digest": "5b0fa19fceab51ef92c5a6924619d9cd72225ebab69326b6a96987541a42a851",
+      "review_reason": "Private repository with no approved recruiter-facing projection."
     },
     {
       "repository_id": "repository:local_registered:2877f83be58d319d",
@@ -714,7 +715,7 @@
       "public_url": "https://github.com/jakyeamos/eslint-plugin-anti-slop/releases/tag/v0.5.0",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/eslint-plugin-anti-slop"
     },
     {
@@ -735,7 +736,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "3b56ea5933edfac2de330d0bd8c740c10d483c6681b40ca9d69006487f85aeb8"
     },
     {
@@ -756,7 +757,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "69e8482ab8464c65dfb7c5cd54f4b9f4f94bee9eb5474d24a58611629a003a03"
     },
     {
@@ -777,7 +778,7 @@
       "public_url": "https://github.com/jakyeamos/Fantasy",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/Fantasy"
     },
     {
@@ -798,7 +799,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "c5fbc334735fb84cf88af879668d5640d4510e0f1a51fbf1f53707f4a831423c",
       "review_reason": "Project identity evidence is missing."
     },
@@ -820,7 +821,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "fd84179b29b3116282a68a0b4429de7fcf9c7c8b603b79e9f5de08be70120ee3",
       "exclusion_reason": "Personal account infrastructure with no safe public projection."
     },
@@ -842,7 +843,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "525579ace48a624899ef50e23c22e415388d39430dcfe619ded4d17023467ea2"
     },
     {
@@ -863,7 +864,7 @@
       "public_url": "https://github.com/jakyeamos/jakyeamos-agentic-setup",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/jakyeamos-agentic-setup"
     },
     {
@@ -884,7 +885,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "483bb1d121567a9f097bf6f9a97a4a6881d63b04d96192b5dbc205f370748043",
       "exclusion_reason": "Private host and overlay infrastructure."
     },
@@ -906,7 +907,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/jakyeamos",
       "exclusion_reason": "The profile catalog itself; including it would be self-referential."
     },
@@ -928,7 +929,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "ce25e9b954f4e8453570e3acf327b05019862d3b0eb4092b96e0d9d950ea90b2"
     },
     {
@@ -949,7 +950,7 @@
       "public_url": "https://github.com/jakyeamos/mac-control",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/mac-control"
     },
     {
@@ -970,7 +971,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "7d376d2732602d7d25a3c05da07378b1bbedd0b4aab19cf4ebeb61b4d1c68720"
     },
     {
@@ -991,7 +992,7 @@
       "public_url": null,
       "provider_is_fork": null,
       "provider_is_archived": null,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "review_reason": "No configured remote."
     },
     {
@@ -1012,7 +1013,7 @@
       "public_url": "https://github.com/jakyeamos/participant-dedup",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/participant-dedup"
     },
     {
@@ -1033,7 +1034,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "58e396d3c8e0829916cf286fb46e6a8afdbe426869371b851e2dbd9c043588eb"
     },
     {
@@ -1054,7 +1055,7 @@
       "public_url": "https://github.com/jakyeamos/pixel-art-workbench",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/pixel-art-workbench"
     },
     {
@@ -1075,7 +1076,7 @@
       "public_url": null,
       "provider_is_fork": null,
       "provider_is_archived": null,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "review_reason": "No configured remote."
     },
     {
@@ -1096,7 +1097,7 @@
       "public_url": "https://github.com/jakyeamos/portfolio",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/portfolio"
     },
     {
@@ -1117,7 +1118,7 @@
       "public_url": "https://github.com/jakyeamos/pre-cr-suite/tree/v0.1.0",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/pre-cr-suite"
     },
     {
@@ -1138,7 +1139,7 @@
       "public_url": "https://github.com/jakyeamos/pronto",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/pronto"
     },
     {
@@ -1159,7 +1160,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "37312bfa14b65a39db86a1a7b1cfda530dc892db16c9c242a51f87cafd80f4f3"
     },
     {
@@ -1180,7 +1181,7 @@
       "public_url": "https://github.com/jakyeamos/quality-runner/tree/v0.6.0",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/quality-runner"
     },
     {
@@ -1201,7 +1202,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "4ab1df2ee2b17627daa82c1045202f23f9692ceb24f92761ba7cdaa273e02983"
     },
     {
@@ -1222,7 +1223,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "d8b8ee2ca209daf99374daa4d2e5a32096a297d4929b66e2941c64a1cf6f6884"
     },
     {
@@ -1243,7 +1244,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/Relay",
       "exclusion_reason": "Personal control-plane infrastructure."
     },
@@ -1265,7 +1266,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "566e7a615c01c36ba969fe41041dd6166f1ba635ae3ddbca56ed19d9ec6b8d8d"
     },
     {
@@ -1286,7 +1287,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "189803c9e5e59c2571ca5be39503c98ca4eeb0f53d5b341e8f693ba1bd09c017"
     },
     {
@@ -1307,7 +1308,7 @@
       "public_url": "https://github.com/jakyeamos/research-domain-writing",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/research-domain-writing"
     },
     {
@@ -1328,7 +1329,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "2fbefd18311f1d629e8fe7546e2639ed1a6d5c6d4923a0fbb42be4cfca4ceda7"
     },
     {
@@ -1349,7 +1350,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "681231e35b80006a44ad04db6cab0d6df47184edda20de44f564f184b8704057"
     },
     {
@@ -1370,7 +1371,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "152199c1f4c77dd831652b60700850a0558c046818e5aa91e2314d077afd1f51"
     },
     {
@@ -1391,7 +1392,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "c751e755209368dc3e933ed190d44afcf5f580b57b94ffc8f0353b23fa6301ca"
     },
     {
@@ -1412,7 +1413,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "93a4a656ce40fc2a7c3f95c1678a6793dc0cde38bddab4089d8cd43b5da801b3"
     },
     {
@@ -1433,7 +1434,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "8f288ae1069cb39cd9bb21cbacb5772cbc90a13e29f5dfcb04fc8e5b6b965bfd",
       "exclusion_reason": "Generated archive; the maintained agent workbench is represented separately."
     },
@@ -1455,7 +1456,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "2b3f0b0e044ebe292ac95fbe8d7bce5d624be3121579fc84b05d056b5760343e"
     },
     {
@@ -1476,7 +1477,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "c223122860b511760175bc750056bcd698a14d64f7638d091d426e3c94e7d6e5"
     },
     {
@@ -1497,8 +1498,29 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "12d13ad87d1e0120ace008534850caf6596bc55f38066fca24e871125906061f"
+    },
+    {
+      "repository_id": "repository:local_registered:2c8944af2f49ee30",
+      "inventory_scope": "local_registered",
+      "name": "surface-flow",
+      "display_name": "Surface Flow",
+      "provider_visibility": "public",
+      "profile_visibility": "public",
+      "readme_disposition": "include",
+      "catalog_state": "current",
+      "category": "Creative and Consumer",
+      "subcategory": "Visual Experiences",
+      "featured_rank": null,
+      "summary": "Semantic article layout across perspective-mapped illustrated surfaces.",
+      "summary_source": "project-compass+github",
+      "release": null,
+      "public_url": "https://github.com/jakyeamos/surface-flow",
+      "provider_is_fork": false,
+      "provider_is_archived": false,
+      "provider_observed_at": "2026-08-24T03:09:00Z",
+      "provider_identity": "github:jakyeamos/surface-flow"
     },
     {
       "repository_id": "repository:local_registered:a567ea8395f5dfc8",
@@ -1518,7 +1540,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "590edfc207e648299bf1feb8f6fad18e43e9fa10e2aa2302599b5393616eea97"
     },
     {
@@ -1539,7 +1561,7 @@
       "public_url": "https://github.com/jakyeamos/Terrace",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/Terrace"
     },
     {
@@ -1560,7 +1582,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "28474f2aac0ca9d19004b62fce78ea749bc97fd034393c1394f1c5b23a054a32"
     },
     {
@@ -1581,7 +1603,7 @@
       "public_url": "https://github.com/jakyeamos/tmcp/releases/tag/v0.5.8",
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity": "github:jakyeamos/tmcp"
     },
     {
@@ -1602,7 +1624,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "1a70b8900e25373d1a09853a71a86038227d26c3243573895006e2ad7ef82d02"
     },
     {
@@ -1623,7 +1645,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "13bbc7dd05890defe428dd7760c5b546dd8629ccd4317df1446a5b79414dacd0"
     },
     {
@@ -1644,7 +1666,7 @@
       "public_url": null,
       "provider_is_fork": false,
       "provider_is_archived": false,
-      "provider_observed_at": "2026-08-23T04:09:44Z",
+      "provider_observed_at": "2026-08-24T03:09:00Z",
       "provider_identity_digest": "2d302763d29c42f42d90d17bbea6cc18b45f3b96bef582fda06cba46974c1bab"
     }
   ]

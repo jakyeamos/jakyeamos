@@ -6,7 +6,7 @@ I build product systems, developer tooling, applied AI workflows, and data-inten
 
 ---
 
-<!-- profile-catalog: schema=jakyeamos-profile-catalog/v2 catalog_sha256=8a3e21c0a4910f795c6201272b02f620cb32b12e64bb2346a914e917cb3e9d0e source_commit=bb0b797a6ab21ecfc54e20bd66e1f3e7083e7d63 inventory_observed_at=2026-08-23T04:09:44Z rendered_entry_count=63 -->
+<!-- profile-catalog: schema=jakyeamos-profile-catalog/v2 catalog_sha256=4c813ee5305df7690d85fb015f8141c6d96621c7dba1dd014ca56bfc7b257ec2 source_commit=f460fa74c3d90388696912eb58919b60abb49d25 inventory_observed_at=2026-08-24T03:09:00Z rendered_entry_count=64 -->
 
 ## Public Releases
 
@@ -218,7 +218,7 @@ Operational software for teams, professionals, and repeatable business workflows
 </details>
 
 <details>
-<summary><strong>Creative and Consumer</strong> · 5 repositories</summary>
+<summary><strong>Creative and Consumer</strong> · 6 repositories</summary>
 
 Experiments and products for media, publishing, and visual interaction.
 
@@ -250,6 +250,16 @@ Editorial and portfolio systems for presenting authored work.
 
 <!-- profile-catalog-entry: repository:local_registered:c9bf1e622f1330b7 -->
 - Dispatches from Cyberspace — Versioned publishing platform for authored dispatches with drafts, publication, comments, reactions, JSON Feed, sitemap, and authenticated authorization.
+
+</details>
+
+<details>
+<summary>&nbsp;&nbsp;<span aria-hidden="true">↳</span>&nbsp;Visual Experiences · 1 repository</summary>
+
+Image-first interfaces and visual creation tools.
+
+<!-- profile-catalog-entry: repository:local_registered:2c8944af2f49ee30 -->
+- [Surface Flow](https://github.com/jakyeamos/surface-flow) — Semantic article layout across perspective-mapped illustrated surfaces.
 
 </details>
 
