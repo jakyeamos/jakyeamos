@@ -90,7 +90,7 @@ def _repository_id(scope: str, identity: str) -> str:
 
 def _provider_visibility(provider: dict[str, Any] | None) -> str:
     raw = str((provider or {}).get("visibility") or "UNKNOWN").lower()
-    return raw if raw in {"public", "private"} else "unknown"
+    return raw if raw in {"public", "private", "internal"} else "unknown"
 
 
 def _summary(
@@ -187,7 +187,12 @@ def _entry(
     return entry
 
 
-def build_catalog(database: Path, profile_root: Path, observed_at: str) -> dict[str, Any]:
+def build_catalog(
+    database: Path,
+    profile_root: Path,
+    observed_at: str,
+    pronto_root: Path = Path("/Users/jakyeamos/Documents/pronto"),
+) -> dict[str, Any]:
     inventory = read_inventory(database)
     previous_path = profile_root / "profile-catalog.json"
     previous_entries = json.loads(previous_path.read_text(encoding="utf-8")).get("entries", []) if previous_path.exists() else []
@@ -215,7 +220,7 @@ def build_catalog(database: Path, profile_root: Path, observed_at: str) -> dict[
         "schema_version": SCHEMA_VERSION,
         "inventory": {
             "source": "pronto-registry+github-provider",
-            "source_commit": git_head(Path("/Users/jakyeamos/Documents/pronto")),
+            "source_commit": git_head(pronto_root),
             "observed_at": observed_at,
             "registered_repository_count": len(inventory),
             "provider_only_count": 1,
@@ -235,9 +240,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--registry", type=Path, default=DEFAULT_REGISTRY)
     parser.add_argument("--profile-root", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--pronto-root", type=Path, default=Path("/Users/jakyeamos/Documents/pronto"))
     parser.add_argument("--observed-at", default=utc_now())
     args = parser.parse_args()
-    catalog = build_catalog(args.registry, args.profile_root, args.observed_at)
+    catalog = build_catalog(args.registry, args.profile_root, args.observed_at, args.pronto_root)
     destination = args.profile_root / "profile-catalog.json"
     destination.write_text(json.dumps(catalog, indent=2, sort_keys=False) + "\n", encoding="utf-8")
     print(json.dumps({

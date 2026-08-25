@@ -19,7 +19,7 @@ except ModuleNotFoundError:  # pragma: no cover - direct script execution
 
 SCHEMA_VERSION = "jakyeamos-profile-catalog/v2"
 FRESHNESS_STATES = {"current", "missing", "needs_review", "stale", "blocked", "unknown"}
-PROVIDER_VISIBILITIES = {"public", "private", "unknown"}
+PROVIDER_VISIBILITIES = {"public", "private", "internal", "unknown"}
 PROFILE_VISIBILITIES = {"public", "private_readme_allowed", "fully_private"}
 README_DISPOSITIONS = {"include", "exclude", "defer"}
 ENTRY_MARKER = re.compile(r"<!-- profile-catalog-entry: (?P<id>[^ ]+) -->")
@@ -112,8 +112,8 @@ def validate_catalog(catalog: dict[str, Any]) -> list[str]:
                 if not str(entry.get("public_url") or "").startswith("https://github.com/"):
                     errors.append(f"{prefix} public profile entries require a GitHub public_url")
             elif profile == "private_readme_allowed":
-                if provider != "private":
-                    errors.append(f"{prefix} private README entries require private provider evidence")
+                if provider not in {"private", "internal"}:
+                    errors.append(f"{prefix} private README entries require private or internal provider evidence")
                 if entry.get("public_url"):
                     errors.append(f"{prefix} private README entries cannot carry public_url")
             else:

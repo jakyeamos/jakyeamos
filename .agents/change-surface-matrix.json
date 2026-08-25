@@ -18,7 +18,8 @@
         "Refresh from Pronto's read-only registered-repository inventory plus authenticated live GitHub provider evidence; verify one row per registered repository and a canonical provider-only LIS row.",
         "Validate schema, duplicate identities, freshness states, provider_visibility, profile_visibility, readme_disposition, current-row requirements, and private URL boundaries.",
         "Keep public catalog data privacy-safe: use opaque local identities and digested private provider identities; never persist local paths or private remote URLs.",
-        "Keep missing, needs_review, stale, blocked, and unknown evidence distinct from fully_private; do not infer privacy from absence of provider evidence."
+        "Keep missing, needs_review, stale, blocked, and unknown evidence distinct from fully_private; do not infer privacy from absence of provider evidence.",
+        "Represent GitHub internal visibility explicitly and treat it as non-public for README eligibility."
       ],
       "status": "applicable"
     },
@@ -32,35 +33,52 @@
       "validation": [
         "Verify the catalog hash, source commit, inventory observation time, and rendered-entry count marker agree.",
         "Verify every current include row with public or explicitly approved private_readme_allowed visibility is rendered exactly once.",
-        "Verify exclude, defer, fully_private, missing, stale, and needs_review rows are omitted; private README-allowed rows never emit a private URL or provider identity.",
+        "Verify exclude, defer, fully_private, missing, stale, and needs_review rows are omitted; private or internal README-allowed rows never emit a private URL or provider identity.",
         "Verify Public Releases remains a flat table and Product Work supplies category highlights plus nested subcategory disclosure, including Product Work > Developer Tooling > Agent-enabled."
+      ],
+      "status": "applicable"
+    },
+    {
+      "id": "profile-publication-adapter",
+      "scope": "visibility-driven generated README publication",
+      "path": "scripts/sync_profile_repository.py; scripts/refresh_profile_catalog.py; scripts/generate_profile_readme.py; scripts/check_profile.py",
+      "owner": "Jakye Amos",
+      "condition": "A confirmed, fresh GitHub visibility readback is ready to project into the generated profile repository.",
+      "operations": ["add", "change", "remove"],
+      "validation": [
+        "Create a detached worktree from origin/main and invoke the existing catalog refresh, README generator, and validators there.",
+        "Require an exact selected repository row and matching public, private, or internal provider visibility; unknown, stale, failed, and mismatched states stop before publication.",
+        "Allow only profile-catalog.json and README.md changes, with non-selected catalog rows and README sections byte-stable apart from generated observation metadata.",
+        "Push only to the generated profile repository's main branch after the explicit publication confirmation, then read back hosted README.md and match the generated marker and expected link state."
       ],
       "status": "applicable"
     },
     {
       "id": "profile-agent-context",
       "scope": "agent-facing profile workflow",
-      "path": ".agents/change-surface-matrix.json; README.md; scripts/",
+      "path": ".agents/change-surface-matrix.json; .agents/context/README.md; .agents/context/commands.md; README.md; scripts/",
       "owner": "Jakye Amos",
       "condition": "Catalog refresh, README generation, or profile publication workflow changes.",
       "operations": ["add", "change", "remove"],
       "validation": [
         "Document the source inventory, read-only refresh boundary, freshness window, and exact command used to render the README.",
-        "Keep source/local inventory, provider visibility, README eligibility, and published profile readback as separate evidence lanes."
+        "Keep source/local inventory, provider visibility, README eligibility, and published profile readback as separate evidence lanes.",
+        "Document that the publication adapter is a generated-output workflow, not authority to mutate GitHub repository visibility."
       ],
       "status": "applicable"
     },
     {
       "id": "profile-tests",
       "scope": "repository checks",
-      "path": "tests/test_check_profile.py; scripts/check_profile.py",
+      "path": "tests/test_check_profile.py; tests/test_profile_sync.py; scripts/check_profile.py; scripts/sync_profile_repository.py",
       "owner": "Jakye Amos",
       "condition": "Any profile catalog or renderer behavior changes.",
       "operations": ["add", "change", "remove"],
       "validation": [
         "python3 -m unittest discover -s tests -v",
         "python3 scripts/check_profile.py",
-        "python3 scripts/generate_profile_readme.py --check"
+        "python3 scripts/generate_profile_readme.py --check",
+        "Exercise public-link insertion, private/internal suppression, exact diff rejection, and hosted-readback mismatch handling."
       ],
       "status": "applicable"
     }
