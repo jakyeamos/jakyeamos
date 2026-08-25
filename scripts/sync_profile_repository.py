@@ -96,7 +96,17 @@ def assert_catalog_scope(
     before_entries = {entry.get("repository_id"): entry for entry in before.get("entries", [])}
     after_entries = {entry.get("repository_id"): entry for entry in after.get("entries", [])}
     if set(before_entries) != set(after_entries):
-        raise SyncError("profile catalog row identities changed outside the selected repository")
+        added = sorted(set(after_entries) - set(before_entries))
+        removed = sorted(set(before_entries) - set(after_entries))
+        details = []
+        if added:
+            details.append("added=" + ",".join(str(repository_id) for repository_id in added))
+        if removed:
+            details.append("removed=" + ",".join(str(repository_id) for repository_id in removed))
+        raise SyncError(
+            "profile catalog row identities changed outside the selected repository"
+            + (f" ({'; '.join(details)})" if details else "")
+        )
     for repository_id, previous in before_entries.items():
         current = after_entries[repository_id]
         if previous.get("name") == repository_name:
@@ -316,41 +326,50 @@ def publish(
         )
         paths = changed_paths(worktree)
         if not paths:
-            return {
+            result = {
                 "status": "no_op",
                 "repository": repository_name,
                 "visibility": expected,
                 "readback": "not_required",
             }
-        run(["git", "add", "--", "profile-catalog.json", "README.md"], cwd=worktree)
-        run(
-            ["git", "commit", "-m", f"chore: sync profile visibility for {repository_name}"],
-            cwd=worktree,
-        )
-        commit = run(["git", "rev-parse", "HEAD"], cwd=worktree).strip()
-        if not push:
-            return {
-                "status": "validated",
-                "repository": repository_name,
-                "visibility": expected,
-                "changed_paths": paths,
-                "prepared_commit": commit,
-                "readback": "blocked_until_publish_authorization",
-            }
-        if confirmation != CONFIRM_PUSH:
-            raise SyncError(f"publishing requires --confirm-push {CONFIRM_PUSH!r}")
-        run(["git", "push", "origin", f"HEAD:{target_branch}"], cwd=worktree)
-        remote_text = read_remote_readme(profile_repository, target_branch)
-        assert_hosted_readback(remote_text, readme, catalog, repository_name, expected)
-        return {
-            "status": "published",
-            "repository": repository_name,
-            "visibility": expected,
-            "changed_paths": paths,
-            "readback": "matched",
-        }
-    finally:
+        else:
+            run(["git", "add", "--", "profile-catalog.json", "README.md"], cwd=worktree)
+            run(
+                ["git", "commit", "-m", f"chore: sync profile visibility for {repository_name}"],
+                cwd=worktree,
+            )
+            commit = run(["git", "rev-parse", "HEAD"], cwd=worktree).strip()
+            if not push:
+                result = {
+                    "status": "validated",
+                    "repository": repository_name,
+                    "visibility": expected,
+                    "changed_paths": paths,
+                    "prepared_commit": commit,
+                    "readback": "blocked_until_publish_authorization",
+                }
+            else:
+                if confirmation != CONFIRM_PUSH:
+                    raise SyncError(f"publishing requires --confirm-push {CONFIRM_PUSH!r}")
+                run(["git", "push", "origin", f"HEAD:{target_branch}"], cwd=worktree)
+                remote_text = read_remote_readme(profile_repository, target_branch)
+                assert_hosted_readback(remote_text, readme, catalog, repository_name, expected)
+                result = {
+                    "status": "published",
+                    "repository": repository_name,
+                    "visibility": expected,
+                    "changed_paths": paths,
+                    "readback": "matched",
+                }
+    except Exception as error:
+        try:
+            remove_worktree(profile_root, worktree)
+        except SyncError as cleanup_error:
+            raise SyncError(f"{error}; {cleanup_error}") from error
+        raise
+    else:
         remove_worktree(profile_root, worktree)
+        return result
 
 
 def main() -> int:
