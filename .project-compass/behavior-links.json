@@ -1,0 +1,20 @@
+{
+  "behaviors": [
+    {
+      "id": "catalog-visibility-provenance",
+      "spec_ref": ".project-compass/contract.json#/pillars/0/outcomes/0"
+    },
+    {
+      "id": "private-projection-exclusion",
+      "spec_ref": ".project-compass/contract.json#/pillars/0/outcomes/0"
+    },
+    {
+      "id": "exact-once-catalog-render",
+      "spec_ref": ".project-compass/contract.json#/pillars/0/outcomes/0"
+    },
+    {
+      "id": "stale-marker-detection",
+      "spec_ref": ".project-compass/contract.json#/pillars/0/outcomes/0"
+    }
+  ]
+}

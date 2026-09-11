@@ -1,0 +1,97 @@
+{
+  "schema": "compass-development/v1",
+  "revision": 2,
+  "inventory": {
+    "source": "git-tracked",
+    "include": [
+      "src/**",
+      "scripts/**",
+      "test/**",
+      "tests/**",
+      "index.mjs",
+      ".github/workflows/**",
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "exclude": [],
+    "behavior_ref": ".project-compass/behavior-links.json"
+  },
+  "bindings": [
+    {
+      "id": "reviewed-root-boundary",
+      "compass_id": "project",
+      "authority": "accepted",
+      "decision_id": "existing-root-source-association",
+      "paths": [
+        "scripts/check_profile.py",
+        "scripts/generate_profile_readme.py",
+        "scripts/profile_catalog.py",
+        "scripts/profile_policy.py",
+        "scripts/refresh_profile_catalog.py",
+        "tests/test_check_profile.py",
+        ".project-compass/development.json",
+        ".project-compass/behavior-links.json"
+      ],
+      "outcomes": [
+        "attributable-profile",
+        "review-before-reliance"
+      ],
+      "behavior_ids": [
+        "catalog-visibility-provenance",
+        "private-projection-exclusion",
+        "exact-once-catalog-render",
+        "stale-marker-detection"
+      ],
+      "constraints": [
+        "Require resolved visibility and inclusion policy plus description provenance before rendering current catalog entries.",
+        "Exclude private URLs and local paths from the public projection; keep catalog provenance markers consistent and eligible entries rendered exactly once.",
+        "Preserve the generated README contract and explicit renderer boundary; refresh/catalog operations do not authorize autonomous publication or personal claim changes.",
+        "Keep source evidence, interpretation, current external release claims and owner review distinct; local generated-output tests do not establish live public visual readback."
+      ],
+      "references": [
+        "README.md",
+        ".project-compass/contract.json",
+        "tests/test_check_profile.py",
+        "scripts/profile_policy.py",
+        "scripts/profile_catalog.py"
+      ],
+      "dependencies": [],
+      "proof": [
+        {
+          "id": "reviewed-local-boundary",
+          "receipt": ".project-compass/evidence/reviewed-local-boundary.json",
+          "command": [
+            "python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests"
+          ],
+          "oracle_ref": "tests/test_check_profile.py",
+          "behavior_ids": [
+            "catalog-visibility-provenance",
+            "private-projection-exclusion",
+            "exact-once-catalog-render",
+            "stale-marker-detection"
+          ]
+        }
+      ],
+      "handoff_review": "Own catalog policy validation and deterministic README projection. Inventory/provider sources own reported repository facts; the owner owns personal claims and publication. README is generated, so Compass changes stay in .project-compass without appended prose. Evidence limit: Tests assert policy, provenance, private URL rejection, exact-once rendering and stale markers; live public readback and current release validation remain open. The exact package, lock and CI paths support reproducible local validation and distribution declarations; their association does not prove a hosted CI run or authorize publication."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "source-review-proposal",
+      "summary": "Proposed exact-path translation of existing canonical local validation/projection behavior; no change to existing root intent.",
+      "source": "README.md",
+      "status": "superseded"
+    },
+    {
+      "id": "existing-root-source-association",
+      "status": "accepted",
+      "source": ".project-compass/contract.json",
+      "summary": "Accepted source association to the existing root outcomes, grounded in .project-compass/contract.json and the unchanged .project-compass/contract.json intended source provenance. Detailed source review and independent batch-1 review on 2026-09-11 establish these exact implementation/proof associations. This adopts no new product intent, changes no maturity, closes no runtime gaps, and grants no release authority. Installation and final diff review remain separate task gates."
+    }
+  ]
+}
