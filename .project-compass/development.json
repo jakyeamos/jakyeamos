@@ -1,6 +1,6 @@
 {
   "schema": "compass-development/v1",
-  "revision": 2,
+  "revision": 3,
   "inventory": {
     "source": "git-tracked",
     "include": [
@@ -77,7 +77,7 @@
           ]
         }
       ],
-      "handoff_review": "Own catalog policy validation and deterministic README projection. Inventory/provider sources own reported repository facts; the owner owns personal claims and publication. README is generated, so Compass changes stay in .project-compass without appended prose. Evidence limit: Tests assert policy, provenance, private URL rejection, exact-once rendering and stale markers; live public readback and current release validation remain open. The exact package, lock and CI paths support reproducible local validation and distribution declarations; their association does not prove a hosted CI run or authorize publication."
+      "handoff_review": "Own catalog policy validation and deterministic README projection. Inventory/provider sources own reported repository facts; the owner owns personal claims and publication. README is generated, so Compass changes stay in .project-compass without appended prose. Evidence limit: Tests assert policy, provenance, private URL rejection, exact-once rendering and stale markers; live public readback and current release validation remain open."
     }
   ],
   "decisions": [
